@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'rubi';
+  src: url('font/RubikScribble-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'rubi_shadow';
+  src: url('font/RubikDoodleShadow-Regular.ttf') format('truetype');
+}
+
+body h1{
+  font-family: rubi_shadow;
+
+}
+
+#skill-wrap{
+  display: flex;
+}
+
+.skill-wrap{
+padding: 30px;
+
+}
+
+.skill-div{
+padding: 10px;
+width: 50%;
+}
+
+.skill-list {
+    position: relative;
+    padding: 0;
+    list-style: none;
+    width: 400px;
+}
+
+.skill-list li{
+  margin: 16px 0;
+}
+
+.skill-list li .bar-background{
+    margin: 10px 0;
+    background-color: rgb(231, 231, 231);
+    height:12px; 
+    border-radius:10px;
+}
+.skill-list li .bar {
+      
+    position: absolute;
+    border-radius: 10px; 
+    background-color: lightpink;
+    height: 12px;
+    &:after  {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        content: "";
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: -1px;
+        right: 0;
+        border-radius: 50%;
+        background-color: rgb(255, 175, 188)
+    }
+}
+
+/* .css-progressbar {
+width: 80%; 
+-moz-animation: css-progressbar 2s ease-out;
+-webkit-animation: css-progressbar 2s ease-out;
+} */
+
+
+.skill-list li .java-progressbar {
+    width: 65%;
+    animation: progressbar 2s ease-out;
+}
+.skill-list li .javascript-progressbar {
+    width: 80%;
+    animation: progressbar2 2s ease-out;
+}
+
+.skill-title{
+    font-size: 15px;
+    font-weight: 400;
+    /* margin-left: 5px;
+    margin-bottom: 5px; */
+    margin: 0px 6px;
+}
+
+/* animation */
+@keyframes progressbar { 
+  0%  { 
+    width: 0%;
+  } 
+  100% { 
+    width: 65%;
+  }  
+}
+@keyframes progressbar2 { 
+  0%  { 
+    width: 0%;
+  } 
+  100% { 
+    width: 80%;
+  }  
+}
