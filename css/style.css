@@ -26,8 +26,11 @@ a {
 
 #topButton {position: fixed; right: 2%; bottom: 50px; z-index: 999; }
 #topButtonImg{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
+	border: 1px solid #bbbbbb;
+	padding: 2px;
+	background-color: #fff;
 }
 /* header */
 header{
@@ -40,17 +43,26 @@ header .inner{
 	margin: 0px auto;
 	position: relative; /* 자식 absolute 요소의 기준점 설정 */
 }
-header .inner h1{
-	position: absolute;
-	left: 15px;
-	bottom: 15px;
-    font-weight:bold;
-	font-size: 40px;
-	line-height: 1;
-	font-family: 'NanumSquare';
-	color: #444;
+#nav-logo{
+	/* display: flex; */
+	/* position: absolute; */
+	/* left: 15px;
+	bottom: 15px; */
+    /* font-weight:bold;
+	font-size: 40px; */
+	/* line-height: 1; */
+	/* font-family: 'NanumSquare'; */
+	/* color: #444; */
     /* top: 10px; */
+	display: flex;
 }
+header .inner img{
+	width: 30px;
+	height: 30px;
+	margin: 20px;
+	position: absolute;
+}
+
 header .inner #gnb{
 	position: absolute;
 	bottom: 0px;
@@ -74,7 +86,7 @@ header .inner #gnb li a:hover{
 	/* background: #555; */
 	color: hsl(222, 100%, 75%);
     font-weight: 1000;
-    font-size: 1.5vw;
+    /* font-size: 1.5vw; */
 }
 
 /* visual */
@@ -94,7 +106,7 @@ figure{
 	position: relative;
 	overflow: hidden;
 	/* padding-top: 250px; */
-    padding: 250px 0 10px 50px;
+    padding: 200px 50px 30px 50px;
 }
 figure video{
 	object-fit: cover; /* 영상을 figure 영역 안에 꽉 차도록 설정 */
@@ -231,8 +243,8 @@ aside .aside-div img{
 /* footer */
 footer{
 	width: 100%;
-	background: #333;
-	padding: 100px 30px;
+	background: hsl(0, 0%, 38%);
+	padding: 100px 30px 10px;
 	border-top: 1px solid #888;
 }
 footer .inner{
@@ -261,29 +273,43 @@ footer .inner .upper ul li{
 	float: left;
 	margin-left: 20px;
 }
-footer .inner .upper ul li a{
-	font: bold 14px/1 'NanumSquare', sans-serif;
-	color: #ffffff;
-}
 footer .inner .lower{
 	width: 100%;
 	padding-top: 20px;
 }
-footer .inner .lower address{
-	width: 100%;
-	font: 12px/1.3 'NanumSquare', sans-serif;
+footer .inner .lower ul li a{
+	font: bold 14px/1 'NanumSquare', sans-serif;
 	color: #ffffff;
-	margin-bottom: 20px;
 }
 footer .inner .lower p{
 	width: 100%;
 	font: 12px/1 'NanumSquare', sans-serif;
 	color: #ffffff;
 }
-
+/* 
 #ContactLogo li a img{
-    width: 16px;
+	width: 16px;
     height: 100%;
+} */
+footer .comment {
+	width: 100%;
+	font: 12px/1.3 'NanumSquare', sans-serif;
+	color: #ffffff;
+	margin-bottom: 20px;
+	padding: 50px 0 10px;
+}
+footer #ContactLogo li span{
+	
+	width: 100%;
+	font: 12px/1.3 'NanumSquare', sans-serif;
+	color: #ffffff;
+	margin-bottom: 20px;
+	/* padding: 50px 0 10px; */
+}
+
+
+.contact-logo{
+	display: flex;
 }
 
 /* skill */
@@ -367,6 +393,18 @@ margin: 16px 0;
     width: 74%;
     animation: progressbar_css 2s ease-out;
 }
+.skill-list li .progressbar_jenkins {
+    width: 10%;
+    animation: progressbar_jenkins 2s ease-out;
+}
+.skill-list li .progressbar_svn {
+    width: 60%;
+    animation: progressbar_svn 2s ease-out;
+}
+.skill-list li .progressbar_git {
+    width: 30%;
+    animation: progressbar_git 2s ease-out;
+}
 
 .skill-title{
     font-size: 15px;
@@ -423,5 +461,29 @@ margin: 16px 0;
     } 
     100% { 
         width: 74%;
+    }  
+}
+@keyframes progressbar_jenkins { 
+    0%  { 
+        width: 0%;
+    } 
+    100% { 
+        width: 10%;
+    }  
+}
+@keyframes progressbar_svn { 
+    0%  { 
+        width: 0%;
+    } 
+    100% { 
+        width: 60%;
+    }  
+}
+@keyframes progressbar_git { 
+    0%  { 
+        width: 0%;
+    } 
+    100% { 
+        width: 30%;
     }  
 }

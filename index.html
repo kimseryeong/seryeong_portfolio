@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SerongDev</title>
+    <title>Developer Serong</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://kit.fontawesome.com/4ec99819c4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script defer src="js/main.js"></script>
 </head>
 <body>
     
     <header>
         <div class="inner">
-            <!-- <h1>Seryeong's portfolio</h1> -->
+            <a href="https://github.com/kimseryeong" target="_blank">
+                <img src="./img/github.png">
+            </a>
 
             <ul id="gnb"> <!-- 주 메뉴의 아이디명 : global navigation bar -->
                 <!-- <li><a href="#about_figure" class="scroll">About</a></li> -->
@@ -40,11 +42,12 @@
             <!-- <a href="#" class="viewDetail">View detail</a> -->
         </div>
         <div class="img">
-            <img src="../img/mimo.png">
+            <img src="./img/mimo.png">
         </div>
     </figure>
 
-    <div id="topButton" style="cursor: pointer">맨위로<img src="../img/close.png" id="topButtonImg"></div>
+    <div id="topButton" style="cursor: pointer"><img src="./img/top.png" id="topButtonImg"></div>
+
     <section id="skill">
         <div class="inner">
             <h1>Skill</h1>
@@ -69,6 +72,12 @@
                             <span class="skill-title">Oracle</span>
                             <div class="bar-background">
                                 <span class="progressbar_oracle bar"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-title">Jenkins</span>
+                            <div class="bar-background">
+                                <span class="progressbar_jenkins bar"></span>
                             </div>
                         </li>
                     </ul>
@@ -98,18 +107,24 @@
 
                     </ul>
                 </div>
-                <!-- <div class="skill-div">
-                    <h3>Etc</h3>
-                    <ul class="skill-list framework">
+                <div class="skill-div">
+                    <h3>📌 SCM</h3>
+                    <ul class="skill-list scm">
                         <li>
-                            <span class="skill-title">Spring</span>
+                            <span class="skill-title">SVN</span>
                             <div class="bar-background">
-                                <span class="spring-progressbar bar"></span>
+                                <span class="progressbar_svn bar"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-title">Git</span>
+                            <div class="bar-background">
+                                <span class="progressbar_git bar"></span>
                             </div>
                         </li>
 
                     </ul>
-                </div> -->
+                </div>
             </div>
         </div>
     </section>
@@ -169,22 +184,25 @@
         <div class="inner">
             <div class="upper">
                 <h1>Contact</h1>
+            </div>
+            
+            <div class="lower">
                 <ul id="ContactLogo">
-                    <li><a href="https:" target="_blank"><img src="./img/notion_logo.png"></a></li>
-                    <li><a href="#"><i class="fas fa-envelope"></i></a></li>
-                    <li><a href="https://github.com/kimseryeong" target="_blank"><i class="fas fab fa-github"></i></a></li>
-                  
+                    <li class="contact-logo">
+                        
+                        <span>kxxoo322@gmail.com</span>
+                    </li>
+                    <li class="contact-logo">
+                        
+                        <span>https://github.com/kimseryeong</span>
+                    </li>
                 </ul>
             </div>
-
-            <div class="lower">
-                <address>
-                    쩝
-                </address>
-                <p>
-                    2024 SERYEONG
-                </p>
-            </div>
+        </div>
+        <div class="comment">
+            <span>
+                2024년 새롭게 만들어 꾸준히 발전하고 성장하는 모습을 담을 저의 소중한 첫 사이트입니다. <br/>
+            </span>
         </div>
     </footer>
 </body>
