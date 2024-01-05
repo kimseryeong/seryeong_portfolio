@@ -21,7 +21,7 @@
 
             <ul id="gnb"> <!-- 주 메뉴의 아이디명 : global navigation bar -->
                 <!-- <li><a href="#about_figure" class="scroll">About</a></li> -->
-                <li><a href="#skill" class="scroll">Skill</a></li>
+                <li><a href="#skill" class="scroll">Tech Stack</a></li>
                 <li><a href="#project_section" class="scroll">Project</a></li>
                 <li><a href="#resume" class="scroll">Resume</a></li>
                 <li><a href="#contact_footer" class="scroll">Contact</a></li>
@@ -48,9 +48,9 @@
 
     <div id="topButton" style="cursor: pointer"><img src="./img/top.png" id="topButtonImg"></div>
 
-    <section id="skill">
+    <section id="skill"  class="menu-div">
         <div class="inner">
-            <h1>Skill</h1>
+            <h1 class="menu-title">Tech Stack</h1>
             <div id="skill-wrap" class="skill-wrap">
                 
                 <div class="skill-div">
@@ -61,24 +61,45 @@
                             <div class="bar-background">
                                 <span class="progressbar_java bar"></span>
                             </div>
+                            <p class="skill-comment">
+                                웹 개발을 위해 자바를 사용하여 객체지향적인 설계 및 개발이 가능합니다.
+                            </p>
                         </li>
                         <li>
-                            <span class="skill-title">Spring</span>
+                            <span class="skill-title">Python</span>
                             <div class="bar-background">
-                                <span class="progressbar_spring bar"></span>
+                                <span class="progressbar_python bar"></span>
                             </div>
+                            <p class="skill-comment">
+                                알고리즘 공부를 위해 파이썬을 사용하고 있습니다. 
+                            </p>
                         </li>
                         <li>
                             <span class="skill-title">Oracle</span>
                             <div class="bar-background">
                                 <span class="progressbar_oracle bar"></span>
                             </div>
+                            <p class="skill-comment">
+                                SQL 쿼리문 작성, 데이터베이스 설계/구축이 가능합니다.
+                            </p>
                         </li>
                         <li>
-                            <span class="skill-title">Jenkins</span>
+                            <span class="skill-title">eGov Framework</span>
                             <div class="bar-background">
-                                <span class="progressbar_jenkins bar"></span>
+                                <span class="progressbar_egov bar"></span>
                             </div>
+                            <p class="skill-comment">
+                                공공 프로젝트에 참여하여 스프링 기반의 전자정부 프레임워크를 경험했습니다. 
+                            </p>
+                        </li>
+                        <li>
+                            <span class="skill-title">Spring boot</span>
+                            <div class="bar-background">
+                                <span class="progressbar_springboot bar"></span>
+                            </div>
+                            <p class="skill-comment">
+                                RestAPI 설계 및 개발 등 spring boot 프레임워크를 경험했습니다.
+                            </p>
                         </li>
                     </ul>
                 </div>
@@ -91,20 +112,29 @@
                             <div class="bar-background">
                                 <span class="progressbar_javascript bar"></span>
                             </div>
+                            <p class="skill-comment">
+                                라이브러리 활용 등 웹 서비스를 구축하는데 필요한 기능 개발이 가능합니다.
+                            </p>
                         </li>
                         <li>
                             <span class="skill-title">Html</span>
                             <div class="bar-background">
                                 <span class="progressbar_html bar"></span>
                             </div>
+                            <p class="skill-comment">
+                                사용자 친화적인 웹 UI를 위해 html 활용이 가능합니다.
+                            </p>
                         </li>
                         <li>
                             <span class="skill-title">Css</span>
                             <div class="bar-background">
                                 <span class="progressbar_css bar"></span>
                             </div>
+                            <p class="skill-comment">
+                                사용자 친화적인 웹 UI를 위해 css 활용이 가능합니다.
+                            </p>
                         </li>
-
+                        
                     </ul>
                 </div>
                 <div class="skill-div">
@@ -115,27 +145,36 @@
                             <div class="bar-background">
                                 <span class="progressbar_svn bar"></span>
                             </div>
+                            <p class="skill-comment">
+                                공공 프로젝트에 참여했을 때, svn을 통해 협업한 경험이 있습니다.
+                            </p>
                         </li>
                         <li>
                             <span class="skill-title">Git</span>
                             <div class="bar-background">
                                 <span class="progressbar_git bar"></span>
                             </div>
+                            <p class="skill-comment">
+                                개인 프로젝트와 스터디를 위해 git&github 협업 경험이 있습니다.
+                            </p>
                         </li>
 
                     </ul>
                 </div>
             </div>
+            <div class="intro">
+                
+            </div>
         </div>
     </section>
-    <section id="project_section">
+    <div id="project_section" class="menu-div">
         <div class="inner">
-            <h1>Project</h1>
+            <h1 class="menu-title">Project</h1>
             <div class="wrap">
                 <article>
                     <div class="article-div">
                         <div class="pic">
-                            <img src="img/news1.jpg" alt="1번째 콘텐츠 이미지">
+                            <!-- <img src="./img/insertIngredient.png" alt="insertIngredient img"> -->
                         </div>
                         <p>Team Project</p>
                        
@@ -162,11 +201,12 @@
                 
             </div>
         </div>
-    </section>
+    </div>
 
-    <div id="resume">
-
-        resume
+    <div id="resume" class="menu-div">
+        <div class="inner">
+            <h1 class="menu-title">Resume</h1>
+        </div>
     </div>
 
     <!-- <aside>

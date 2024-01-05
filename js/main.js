@@ -10,10 +10,10 @@ $(document).ready(function(){
 
 //메뉴 스크롤
 function fnMenuScroll(){
-    $('.scroll').click(e=>{
-        e.preventDefault();
-        //$(this).attr('animation', '')
-        $('html, body').animate({scrollTop: $(this.hash).offset.top}, 400); //$(this.hash).offset().top
+    $('.scroll').click(function(e){
+        console.log($(this).text(), '클릭됨')
+        // e.preventDefault();
+        $('html, body').animate({scrollTop: $(this.hash).offset.top}, '400'); //$(this.hash).offset().top
     });
 
 }
