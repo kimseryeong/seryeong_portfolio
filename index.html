@@ -22,7 +22,7 @@
             <ul id="gnb"> <!-- 주 메뉴의 아이디명 : global navigation bar -->
                 <!-- <li><a href="#about_figure" class="scroll">About</a></li> -->
                 <li><a href="#skill" class="scroll">Tech Stack</a></li>
-                <li><a href="#project_section" class="scroll">Project</a></li>
+                <li><a href="#project" class="scroll">Project</a></li>
                 <li><a href="#resume" class="scroll">Resume</a></li>
                 <li><a href="#contact_footer" class="scroll">Contact</a></li>
             </ul>
@@ -39,7 +39,7 @@
                 웹 개발자 김세령입니다<br/>
                 
             </p>
-            <!-- <a href="#" class="viewDetail">View detail</a> -->
+            <a href="#" class="viewDetail">소개 보기</a>
         </div>
         <div class="img">
             <img src="./img/mimo.png">
@@ -48,13 +48,14 @@
 
     <div id="topButton" style="cursor: pointer"><img src="./img/top.png" id="topButtonImg"></div>
 
-    <section id="skill"  class="menu-div">
+    
+    <div id="skill"  class="menu-div">
         <div class="inner">
-            <h1 class="menu-title">Tech Stack</h1>
-            <div id="skill-wrap" class="skill-wrap">
+            <!-- <h1 class="menu-title">Tech Stack</h1> -->
+            <div class="inner-wrap">
                 
                 <div class="skill-div">
-                    <h3>📌 Backend</h3>
+                    <span class="title">Back</span>
                     <ul class="skill-list back">
                         <li>
                             <span class="skill-title">Java</span>
@@ -105,7 +106,7 @@
                 </div>
                 
                 <div class="skill-div">
-                    <h3>📌 Frontend</h3>
+                    <span class="title">Front</span>
                     <ul class="skill-list front">
                         <li>
                             <span class="skill-title">Javascript</span>
@@ -137,8 +138,8 @@
                         
                     </ul>
                 </div>
-                <div class="skill-div">
-                    <h3>📌 SCM</h3>
+                <!-- <div class="skill-div">
+                    <h3 class="skill-cate">📌 SCM</h3>
                     <ul class="skill-list scm">
                         <li>
                             <span class="skill-title">SVN</span>
@@ -160,17 +161,48 @@
                         </li>
 
                     </ul>
-                </div>
+                </div> -->
             </div>
             <div class="intro">
                 
             </div>
         </div>
-    </section>
+    </div>
+
+    <div id="project" class="menu-div">
+        <div class="inner">
+            <!-- <span class="title project-title">project</span> -->
+            <div class="inner-wrap">
+                
+                <div style="padding:200px 0; margin:0 10px 0 150px;">
+                    <button type="button" class="slide"><i class="fa-solid fa-chevron-left"></i></button>
+                </div>
+                <div class="project-div">
+                    <div class="project">
+                        내용 
+
+                    </div>
+
+                </div>
+
+                <div class="project-div">
+                    <div class="project">
+                        내용
+                    </div>
+                </div>
+                <div style="padding:200px 0; margin:0 150px 0 10px;">
+                    <button type="button" class="slide"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
     <div id="project_section" class="menu-div">
         <div class="inner">
-            <h1 class="menu-title">Project</h1>
-            <div class="wrap">
+            <!-- <h1 class="menu-title">Project</h1> -->
+            <div class="project-wrap">
                 <article>
                     <div class="article-div">
                         <div class="pic">

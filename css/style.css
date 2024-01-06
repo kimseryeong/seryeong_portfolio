@@ -26,16 +26,23 @@ a {
 
 #topButton {position: fixed; right: 2%; bottom: 50px; z-index: 999; }
 #topButtonImg{
-    width: 15px;
-    height: 15px;
-	border: 1px solid #bbbbbb;
+    width: 24px;
+    height: 24px;
+	border: 1px solid #e6e4e4;
 	padding: 2px;
 	background-color: #fff;
+    border-radius: 50%;
 }
+#topButtonImg:hover{
+    background-color: #edf5ff;
+}    
 /* header */
 header{
 	width: 100%;
 	border-bottom: 1px solid #ddd;
+    position:fixed;
+    background-color: #fff;
+    z-index: 9999;
 }
 header .inner{
 	width: 100%;
@@ -81,18 +88,17 @@ header .inner #gnb li a:hover{
     display: flex;
 }
 .img img{
-    width: 100%;
-    height: 100%;
-    padding-right: 90px;
+    width: 95%;
+    height: 95%;
+    /* padding-right: 90px; */
 }
 
 figure{
 	width: 100%;
-	height: calc(100vh - 120px); /* 전체 브라우저 높이에서 12만큼 빼줌 */
-	/* background-color: #000; */
+	height: 690px;
+	background-color: #edf5ff;
 	position: relative;
 	overflow: hidden;
-	/* padding-top: 250px; */
     padding: 200px 50px 30px 50px;
 }
 figure video{
@@ -128,7 +134,7 @@ figure .inner p{
 	height: 30px;
 	border: 1px solid #bbbbbb;
 	font: bold 11px/30px 'NanumSquare', sans-serif;
-	color: #fff;
+	color: #000;
 	text-align: center;
 	letter-spacing: 1px;
 	transition: all 0.5s;
@@ -145,6 +151,41 @@ figure .inner a:hover{
     padding: 5px;
 }
 /* project */
+.project-title{
+    display: table-cell;
+    vertical-align:middle;
+}
+.project-div{
+    margin: 25px 60px;
+    width: 50%;   
+}
+.project{
+    width: 100%;
+    height: 350px;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.1);
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative;
+
+}
+.project:hover{
+    box-shadow: 5px 5px 5px 5px rgb(0,0,0,0.1);
+}
+.slide{
+    border: 0;
+    outline: 0;
+    background-color: #edf5ff;
+    padding: 5px 8px;
+    border-radius: 50%;
+}
+.slide:hover{
+    background-color: #deedff;
+}
+
+/* 여기는 수정 전 */
 .menu-div{
 	width: 100%;
 	/* height: 600px; */
@@ -160,14 +201,15 @@ figure .inner a:hover{
 	text-align: center;
 	margin-bottom: 50px;
 }
-section .inner .wrap{
-	width: 100%;
+
+.project-wrap{
+    display: flex;
 }
-.inner .wrap article{
-    width: 33%;
+.project-wrap article{
+    width: 100%;
 	float: left;
 	box-sizing: border-box;
-	padding: 15px;
+	padding: 30px;
 }
 
 #project_section{
@@ -308,21 +350,27 @@ footer #ContactLogo li span{
 }
 
 /* skill */
-
-
-
-#skill-wrap{
-display: flex;
-}
-
-.skill-wrap{
-padding: 15px;
-height: 600px;
+.inner-wrap{
+    display: flex;
+    padding: 15px;
 }
 
 .skill-div{
-padding: 25px;
+margin: 25px;
 width: 50%;
+/* border-bottom: 1px solid #777; */
+}
+
+.title{
+    font-weight: 900;
+    font-size: 20px;
+    background-color: #deedff;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 5px 15px;
+    border-radius: 15px;
+    border: 1px solid #deedff;
+    font: 500;
 }
 
 .skill-list {
@@ -334,14 +382,15 @@ width: 50%;
 }
 
 .skill-list li{
-margin: 25px 0;
+margin: 20px 4px;
 }
+
 
 .skill-list li p{
     font-family: 'Nanumsqure';
-    font-size: 12px;
+    font-size: 13px;
     color: #555;
-    margin: 5px ;
+    padding: 5px 3px;
 }
 .skill-list li .bar-background{
     margin: 10px 0;
@@ -371,10 +420,8 @@ margin: 25px 0;
 
 .skill-title{
     font-size: 17px;
-    font-weight: 400;
-    /* margin-left: 5px;
-    margin-bottom: 5px; */
-    margin: 0px 6px;
+    font-weight: 600;
+    margin: 0px 2px;
 }
 
 
