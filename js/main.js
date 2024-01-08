@@ -5,6 +5,8 @@ $(document).ready(function(){
     //맨위로
     fnTopScroll();
     
+    //프로젝트 슬라이드
+    //fnSlide();
     
 });
 
@@ -33,3 +35,4 @@ function fnTopScroll(){
         $('html, body').animate({scrollTop:0}, '300');
 	});
 }
+
