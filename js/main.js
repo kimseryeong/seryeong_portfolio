@@ -13,7 +13,7 @@ $(document).ready(function(){
 //메뉴 스크롤
 function fnMenuScroll(){
     $('.scroll').click(function(e){
-        console.log($(this).text(), '클릭됨')
+        //console.log($(this).text(), '클릭됨')
         // e.preventDefault();
         $('html, body').animate({scrollTop: $(this.hash).offset.top}, '400'); //$(this.hash).offset().top
     });
