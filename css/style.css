@@ -24,6 +24,11 @@ a {
 	text-decoration: none;
 }
 
+.color-gray{
+	color: #777;
+	
+}
+
 #topButton {position: fixed; right: 2%; bottom: 50px; z-index: 999; }
 #topButtonImg{
     width: 24px;
@@ -173,6 +178,10 @@ figure .inner a:hover{
 }
 .project:hover{
     box-shadow: 5px 5px 5px 5px rgb(0,0,0,0.1);
+}
+
+.project-back{
+	display: none;
 }
 .slide{
     border: 0;
@@ -386,7 +395,7 @@ margin: 20px 4px;
 }
 
 
-.skill-list li p{
+.skill-comment{
     font-family: 'Nanumsqure';
     font-size: 13px;
     color: #555;
@@ -436,11 +445,11 @@ margin: 20px 4px;
     animation: progressbar_javascript 2s ease-out;
 }
 .skill-list li .progressbar_springboot {
-    width: 60%;
+    width: 50%;
     animation: progressbar_springboot 2s ease-out;
 }
 .skill-list li .progressbar_egov {
-    width: 50%;
+    width: 45%;
     animation: progressbar_egov 2s ease-out;
 }
 .skill-list li .progressbar_oracle {
@@ -448,11 +457,11 @@ margin: 20px 4px;
     animation: progressbar_oracle 2s ease-out;
 }
 .skill-list li .progressbar_html {
-    width: 67%;
+    width: 60%;
     animation: progressbar_html 2s ease-out;
 }
 .skill-list li .progressbar_css {
-    width: 74%;
+    width: 55%;
     animation: progressbar_css 2s ease-out;
 }
 .skill-list li .progressbar_jenkins {
@@ -460,7 +469,7 @@ margin: 20px 4px;
     animation: progressbar_jenkins 2s ease-out;
 }
 .skill-list li .progressbar_svn {
-    width: 60%;
+    width: 40%;
     animation: progressbar_svn 2s ease-out;
 }
 .skill-list li .progressbar_git {
@@ -468,7 +477,7 @@ margin: 20px 4px;
     animation: progressbar_git 2s ease-out;
 }
 .skill-list li .progressbar_python {
-    width: 70%;
+    width: 60%;
     animation: progressbar_python 2s ease-out;
 }
 
@@ -493,7 +502,7 @@ margin: 20px 4px;
         width: 0%;
     } 
     100% { 
-        width: 60%;
+        width: 45%;
     }  
 }
 @keyframes progressbar_egov { 
@@ -517,7 +526,7 @@ margin: 20px 4px;
         width: 0%;
     } 
     100% { 
-        width: 67%;
+        width: 60%;
     }  
 }
 @keyframes progressbar_css { 
@@ -525,7 +534,7 @@ margin: 20px 4px;
         width: 0%;
     } 
     100% { 
-        width: 74%;
+        width: 55%;
     }  
 }
 @keyframes progressbar_jenkins { 
@@ -541,7 +550,7 @@ margin: 20px 4px;
         width: 0%;
     } 
     100% { 
-        width: 60%;
+        width: 40%;
     }  
 }
 @keyframes progressbar_git { 
