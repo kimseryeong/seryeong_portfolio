@@ -4,24 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
-    <script src="https://kit.fontawesome.com/4ec99819c4.js" crossorigin="anonymous"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/style.css">
-    <script defer src="../js/main.js"></script>
+    <link rel="stylesheet" href="../css/swiper.css">
+    
+    <!-- JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="../js/swiper.js"></script>
+    <script src="https://kit.fontawesome.com/4ec99819c4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="inner">
-            <h1>Seryeong's portfolio</h1>
-
-            <ul id="gnb"> <!-- 주 메뉴의 아이디명 : global navigation bar -->
-                <li><a href="../index.html">About</a></li>
-                <li><a href="../html/skill.html">Skill</a></li>
-                <li><a href="../html/project.html">Project</a></li>
-                <li><a href="../html/resume.html">Resume</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-                
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
         </div>
-    </header>
+        <div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+
+
+    <!-- <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+                <h1>swiper1</h1>
+            </div>
+            <div class="swiper-slide slide">
+                <h1>swiper2</h1>
+            </div>
+            <div class="swiper-slide slide">
+                <h1>swiper3</h1>
+            </div>
+            <div class="swiper-slide slide">
+                <h1>swiper4</h1>
+                <img src="../img/kitten4.jpg" alt="kitten4">
+            </div>
+        </div>
+    </div> -->
 </body>
 </html>
