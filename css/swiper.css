@@ -1,5 +1,51 @@
-.swiper-btn-next{
-    background: url('../img/slide_right.png');
+.slide1{
     background-color: pink;
-    width: 30px;
+}
+.slide2{
+    background-color: aqua;
+}
+.slide3{
+    background-color: plum;
+}
+.swiper{
+    margin: 100px;
+    width: 100%;
+}
+.swiper-div{
+    height: 500px;
+    background-color: grey;
+}
+.swiper-container{
+    /* margin: 100px; */
+    /* padding: 100px; */
+    width: 700px;
+    height: 300px;
+    position: relative;
+}
+.swiper-container .swiper-slide{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide{
+    width: 700px;
+}
+.swiper-button-prev::after, .swiper-button-next::after{
+    /* 기존 버튼 css 지우기 */
+    content: "";
+    display: none;
+}
+.swiper-btn{
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 3px;
+}
+.swiper-button-prev{
+    /* left: 50px; */
+}
+.swiper-pagination{
+    color: white;
 }
