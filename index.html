@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Serong</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Developer Seryeong</title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://kit.fontawesome.com/4ec99819c4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css">
     <script defer src="js/main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="./js/swiper.js"></script>
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    
 </head>
 <body>
     
@@ -175,54 +181,7 @@
     </div>
     
 
-    <div class="controls">
-        <i class="fa-solid fa-chevron-left left"></i>
-    </div>
-    <div class="slide-wrapper">
-        <ul class="slides">
-            <li class="slide_">slide1</li>
-            <li class="slide_">slide2</li>
-            <li class="slide_">slide3</li>
-            <li class="slide_">slide4</li>
-            <li class="slide_">slide5</li>
-        </ul>
-    </div>
-    <div class="controls">
-        <i class="fa-solid fa-chevron-right right"></i>
-    </div>
-    <!-- <script src="./js/slide.js"></script> -->
-
-
-    <div id="project" class="menu-div">
-        <div class="inner">
-            <!-- <span class="title project-title">project</span> -->
-            <div class="inner-wrap">
-                
-                <div style="padding:200px 0; margin:0 10px 0 150px;">
-                    <button type="button" class="slide_"><i class="fa-solid fa-chevron-left"></i></button>
-                </div>
-                <div class="project-div">
-                    <div class="project">
-                        내용 
-
-                    </div>
-
-                </div>
-
-                <div class="project-div">
-                    <div class="project">
-                        내용
-                    </div>
-                </div>
-                <div style="padding:200px 0; margin:0 150px 0 10px;">
-                    <button type="button" class="slide_"><i class="fa-solid fa-chevron-right"></i></button>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="">
+    <!-- <div class="">
         <ul class="project-div slide slide_wrap">
             <li class="slide_item item1">
                 <div class="project">
@@ -306,8 +265,113 @@
             <ul class="slide_pagination"></ul>
         </ul>
     </div>
-    <script src="./js/function.js"></script>
+    <script src="./js/function.js"></script> -->
 
+    <div class="menu-div" id="project">
+        <div class="swiper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide slide1 card">
+                        <div class="card-inner">
+                            <div class="front-content">
+                                <p class="ptj_subject">공공 프로젝트 웹사이트 개발</p> 
+                                <p class="intro">
+                                    건축HUB 사이트의 설계공모 파트를 담당하여 개발
+                                </p>
+                                <div class="content">
+                                    <img class="pjt_img" src="./img/kitten2.jpeg" alt="img">
+                                </div>
+                                <div class="tail">
+                                    <span class="tail-left">
+                                        공동 프로젝트
+                                    </span>
+                                    <span class="tail-right">23.01.05 ~ 24.01.23</span>
+                                </div>
+                            </div>
+                            <div class="back-content">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide2 card">
+                        <div class="card-inner">
+                            <div class="front-content">
+                                <p class="ptj_subject">포트폴리오</p> 
+                                <p class="intro">
+                                    개발자 포트폴리오 웹사이트 개발
+                                </p>
+                                <div class="content">
+                                    <img class="pjt_img" src="./img/kitten4.jpeg" alt="img">
+                                </div>
+                                <div class="tail">
+                                    <span class="tail-left">
+                                        개인 프로젝트
+                                    </span>
+                                    <span class="tail-right">24.01.05 ~ 01.20</span>
+                                </div>
+                            </div>
+                            <div class="back-content">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide3 card">
+                        <div class="card-inner">
+                            <div class="front-content">
+                                <p class="ptj_subject">외국인 대상 레시피 추천 웹서비스</p> 
+                                <p class="intro">
+                                    YOLOv7과 OCR 기반 식재료 이미지 및 영수증 분석을 활용한 <br/>
+                                    외국인 대상 레시피 추천 서비스
+                                </p>
+                                <div class="content">
+                                    <img class="pjt_img" src="./img/insertIngredient.png" alt="img">
+                                </div>
+                                <div class="tail">
+                                    <span class="tail-left">
+                                        팀 프로젝트(5인)
+                                    </span>
+                                    <span class="tail-right">22.09.05 ~ 10.19</span>
+                                </div>
+                            </div>
+                            <div class="back-content">Slide 1 뒷면</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide4 card">
+                        <div class="card-inner">
+                            <div class="front-content">
+                                <p class="ptj_subject">개인 맞춤형 운동 추천 웹서비스</p> 
+                                <p class="intro">
+                                    설문조사 기반의 개인 맞춤형 운동 추천 서비스
+                                </p>
+                                <div class="content">
+                                    <img class="pjt_img" src="./img/kitten1.jpg" alt="img">
+                                </div>
+                                <div class="tail">
+                                    <span class="tail-left">
+                                        팀 프로젝트(5인)
+                                    </span>
+                                    <span class="tail-right">22.07 ~ 08</span>
+                                </div>
+                            </div>
+                            <div class="back-content">
+                                
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+        
+                <div class="swiper-button-prev">
+                    <img class="swiper-btn" src="./img/slide_left.png" alt="이미지">
+                </div>
+                <div class="swiper-button-next">
+                    <img class="swiper-btn" src="./img/slide_right.png" alt="이미지">
+                </div>
+            </div>
+    
+        </div>
+    </div>
 
     <div id="resume" class="menu-div">
         <div class="inner">

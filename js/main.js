@@ -7,7 +7,7 @@ $(document).ready(function(){
     
     //프로젝트 슬라이드
     //fnSlide();
-    
+    fnPjtDesc();
 });
 
 //메뉴 스크롤
@@ -36,3 +36,13 @@ function fnTopScroll(){
 	});
 }
 
+
+function fnPjtDesc(){
+    $('.project').on('mouseenter', ()=>{
+        console.log('마우스 오버 중');
+        $('.desc').show();
+    });
+    $('.project').on('mouseleave', ()=>{
+        console.log('마우스 오버 아님');
+    });
+}
