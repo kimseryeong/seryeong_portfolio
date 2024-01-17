@@ -2,7 +2,7 @@
 const mySwiper = new Swiper('.swiper-container', {
     //옵션설정
     direction: 'horizontal' //수평(수직은 vertical, 기본값:horizontal)
-    ,loop: true //슬라이드 무한 루프(기본값:true)
+    ,loop: false //슬라이드 무한 루프(기본값:true)
     ,loopAdditionalSlides: 1
     ,autoplay: {
         delay: 20000 //자동재생(기본값:false, delay:딜레이 시간)
