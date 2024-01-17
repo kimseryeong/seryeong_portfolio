@@ -314,33 +314,42 @@ figure .inner a:hover{
     transform: rotateY(180deg);
 }
 
-.pjt_desc{
-    font-size: 16px;
-    margin: 25px 0;
+.pjt_desc,
+.pjt_role,
+.pjt_skill{
+    margin-bottom: 25px;
+}
+
+.desc{
+    font-size: 15px;
+    padding-left: 20px;
+    margin-top: 10px;
 }
 .pjt_role{
     display: flex;
-    margin: 20px 0;
-    padding: 5px;
+    /* margin: 20px 0; */
+    align-items: center;
 }
 .pjt_role .right{
     margin-left: auto;
 }
 .pjt_role .roles{
     background-color: #b6d7ff;
-    border-radius: 15px;
-    font: 600;
-    /* padding: 5px; */
+    border-radius: 17px;
+    font: 600 15px black;
+    margin-left: 5px;
+    padding: 8px;
 }
 .pjt_subTitle{
     font: 600 20px black;
     margin-right: 5px;
 }
 .pjt_skill ul{
-    margin-top: 15px;
+    margin-top: 10px;
+    padding-left: 20px;
 }
 .pjt_skill ul li{
-    margin-top: 5px;
+    margin-bottom: 5px;
 }
 /* === project 끝 === */
 
@@ -431,14 +440,12 @@ figure .inner a:hover{
     background-color: #deedff;
 }
 
-/* 여기는 수정 전 */
+
 .menu-div{
 	width: 100%;
-	/* height: 600px; */
     padding-top: 100px;
 }
 .inner{
-	/* width: 1180px; */
 	margin: 0px auto;
 }
 .menu-title{
@@ -447,23 +454,9 @@ figure .inner a:hover{
 	text-align: center;
 	margin-bottom: 50px;
 }
-
-.project-wrap{
-    display: flex;
-}
-.project-wrap article{
-    width: 100%;
-	float: left;
-	box-sizing: border-box;
-	padding: 30px;
-}
-
-
-
 	
 .pic{
     padding: 5px;
-    /* margin-bottom: 20px; */
     height: 300px;
 }
 .pic img{
@@ -480,7 +473,6 @@ footer{
 	border-top: 1px solid #888;
 }
 footer .inner{
-	/* width: 1180px; */
 	margin: 0px auto;
 }
 footer .inner .upper{
@@ -518,11 +510,6 @@ footer .inner .lower p{
 	font: 12px/1 'NanumSquare', sans-serif;
 	color: #ffffff;
 }
-/* 
-#ContactLogo li a img{
-	width: 16px;
-    height: 100%;
-} */
 footer .comment {
 	width: 100%;
 	font: 12px/1.3 'NanumSquare', sans-serif;
