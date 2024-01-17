@@ -242,13 +242,7 @@ figure .inner a:hover{
 
 
 /* === project 시작 === */
-.project-title{
-    display: table-cell;
-    vertical-align:middle;
-}
-.project-div{
-    /* margin: 25px 60px; */
-}
+/* === swiper는 별로 파일로 저장 === */
 .project{
     width: 90%;
     height: 90%;
@@ -287,7 +281,7 @@ figure .inner a:hover{
 .intro{
     height: 15%;
     padding: 12px;
-    font: 400 15px 'NanumSquare', sans-serif;
+    font: 400 13px 'NanumSquare', sans-serif;
 }    
 .project .content{
     width: 100%;
@@ -327,15 +321,26 @@ figure .inner a:hover{
 .pjt_role{
     display: flex;
     margin: 20px 0;
+    padding: 5px;
 }
 .pjt_role .right{
     margin-left: auto;
 }
+.pjt_role .roles{
+    background-color: #b6d7ff;
+    border-radius: 15px;
+    font: 600;
+    /* padding: 5px; */
+}
 .pjt_subTitle{
     font: 600 20px black;
+    margin-right: 5px;
 }
 .pjt_skill ul{
     margin-top: 15px;
+}
+.pjt_skill ul li{
+    margin-top: 5px;
 }
 /* === project 끝 === */
 
