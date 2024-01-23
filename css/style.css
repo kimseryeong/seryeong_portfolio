@@ -258,7 +258,7 @@ figure .inner a:hover{
 
 }
 .ptj_subject{
-    font: 800 22px 'NanumSquare', sans-serif;
+    font: 700 22px 'NanumSquare', sans-serif;
     margin: 3px 0;
 }    
 .pjt_img{
@@ -281,7 +281,7 @@ figure .inner a:hover{
 .intro{
     height: 15%;
     padding: 12px;
-    font: 400 13px 'NanumSquare', sans-serif;
+    font: 500 13px 'NanumSquare', sans-serif;
 }    
 .project .content{
     width: 100%;
@@ -318,11 +318,17 @@ figure .inner a:hover{
 .pjt_role,
 .pjt_skill{
     margin-bottom: 25px;
+
 }
 
+
 .desc{
+    bottom: auto;
+    padding-top: 15px;
+    border-top: 1px solid lightgray;
+    line-height: 1.5;
     font-size: 15px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     margin-top: 10px;
 }
 .pjt_role{
@@ -337,9 +343,36 @@ figure .inner a:hover{
     background-color: #b6d7ff;
     border-radius: 17px;
     font: 600 15px black;
-    margin-left: 5px;
+    margin-left: 0 5px;
     padding: 8px;
 }
+
+.stack-div{
+    margin-bottom: 20px;
+    /* display: flex; */
+}
+
+.stack{
+    background-color: #ddecff;
+    border-radius: 17px;
+    font: 400 13px black;
+    margin-left: 0 5px;
+    padding: 8px;
+    margin: 0;
+    left: 0;
+}
+.stackList{
+    align-items: center;
+    width: 100%;
+}
+.stackList span{
+    margin: 0 5px;
+    font-weight: 600;
+    align-items: center;
+    border: #7fb5ff;
+    border-radius: 17px;
+}
+
 .pjt_subTitle{
     font: 600 20px black;
     margin-right: 5px;
