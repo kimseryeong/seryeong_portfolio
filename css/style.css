@@ -270,7 +270,7 @@ figure .inner a:hover{
 .tail{
     margin-top: 15px;
     display: flex;
-    font: 600 13px 'NanumSquare', sans-serif;
+    font: 600 14px 'NanumSquare', sans-serif;
 }
 .tail-left{
     margin-right: auto;
@@ -326,7 +326,7 @@ figure .inner a:hover{
     bottom: auto;
     padding-top: 15px;
     border-top: 1px solid lightgray;
-    line-height: 1.5;
+    line-height: 2.0;
     font-size: 15px;
     /* padding-left: 20px; */
     margin-top: 10px;
@@ -340,22 +340,33 @@ figure .inner a:hover{
     margin-left: auto;
 }
 .pjt_role .roles{
+    margin-left: 10px;
+    /* margin-left: auto; */
+}
+.roles .role{
     background-color: #b6d7ff;
     border-radius: 17px;
-    font: 600 15px black;
-    margin-left: 0 5px;
+    font: 500 15px black;
     padding: 8px;
+}
+
+
+.pjt_subTitle{
+    font: 600 15px black;
+    /* margin-left: 15px; */
 }
 
 .stack-div{
     margin-bottom: 20px;
+    padding-left: 10px
+    /* text-align: center; */
     /* display: flex; */
 }
 
 .stack{
     background-color: #ddecff;
     border-radius: 17px;
-    font: 400 13px black;
+    font: 400 14px black;
     margin-left: 0 5px;
     padding: 8px;
     margin: 0;
@@ -373,17 +384,43 @@ figure .inner a:hover{
     border-radius: 17px;
 }
 
-.pjt_subTitle{
-    font: 600 20px black;
-    margin-right: 5px;
+.pjt_back_title{
+    background-color: #ddecff;
+    border-radius: 17px;
+    font: 500 16px black;
+    margin-left: 0 5px;
+    padding: 8px;
+    margin: 0;
+    left: 0;
 }
+
+
+
 .pjt_skill ul{
     margin-top: 10px;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 .pjt_skill ul li{
+    display: flex;
     margin-bottom: 5px;
+    line-height: 1.5;
+    font-size: 15px;
 }
+
+
+.pjt_desc{
+    position: absolute;
+    bottom: 0;
+    padding-right: 35px;
+}
+/* .parent {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.child {
+    position: relative;
+} */
 /* === project 끝 === */
 
 

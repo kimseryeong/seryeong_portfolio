@@ -10,7 +10,7 @@
 .swiper{
     margin-top: 30px;
     width: 1250px;
-    height: 465px;
+    height: 410px;
 }
 
 .swiper-container{
@@ -104,7 +104,7 @@ transform: rotateY(180deg);
     padding: 20px 20px 3px 20px;
 }
 .back-content{
-    padding: 40px;
+    padding: 35px;
 }
 
 .back-content {
@@ -114,6 +114,7 @@ transform: rotateY(180deg);
 
 
 .back-content-temp{
+    position: relative;
     margin-left: 100px;
     width: 396px;
     height: 410px;
