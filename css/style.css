@@ -314,26 +314,23 @@ figure .inner a:hover{
     transform: rotateY(180deg);
 }
 
-.pjt_desc,
-.pjt_role,
-.pjt_skill{
-    margin-bottom: 25px;
-
+.pjt_role{
+    margin-bottom: 20px;
 }
 
 
 .desc{
-    bottom: auto;
-    padding-top: 15px;
+    /* bottom: auto; */
+    padding-top: 10px;
     border-top: 1px solid lightgray;
     line-height: 2.0;
-    font-size: 15px;
+    font-size: 14px;
     /* padding-left: 20px; */
     margin-top: 10px;
 }
 .pjt_role{
     display: flex;
-    /* margin: 20px 0; */
+    margin-top: 25px;
     align-items: center;
 }
 .pjt_role .right{
@@ -356,8 +353,9 @@ figure .inner a:hover{
     /* margin-left: 15px; */
 }
 
-.stack-div{
-    margin-bottom: 20px;
+.pjt_stack{
+    
+    /* margin-bottom: 20px; */
     padding-left: 10px
     /* text-align: center; */
     /* display: flex; */
@@ -367,10 +365,11 @@ figure .inner a:hover{
     background-color: #ddecff;
     border-radius: 17px;
     font: 400 14px black;
-    margin-left: 0 5px;
+    /* margin-left: 5px; */
     padding: 8px;
-    margin: 0;
+    margin: 8px 5px 0 0;
     left: 0;
+    display: inline-block;
 }
 .stackList{
     align-items: center;
@@ -383,6 +382,11 @@ figure .inner a:hover{
     border: #7fb5ff;
     border-radius: 17px;
 }
+.pjt_back_bottom{
+    position: absolute;
+    bottom: 10px;
+    /* padding-bottom: 10px; */
+}
 
 .pjt_back_title{
     background-color: #ddecff;
@@ -393,6 +397,7 @@ figure .inner a:hover{
     margin: 0;
     left: 0;
 }
+
 
 
 
@@ -409,9 +414,12 @@ figure .inner a:hover{
 
 
 .pjt_desc{
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
     padding-right: 35px;
+}
+.desc{
+    
 }
 /* .parent {
     display: table-cell;
