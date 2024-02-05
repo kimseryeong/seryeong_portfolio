@@ -73,7 +73,8 @@ header .inner #gnb{
 header .inner #gnb li{
 	float: left;
 }
-header .inner #gnb li a{
+/*header .inner #gnb li a{ */
+.scroll{
 	display:block; /* 인라인 요소는 block을 설정하여 크기 조절 */
 	font-weight:bold;
 	font-size: 15px;
@@ -89,6 +90,11 @@ header .inner #gnb li a:hover{
     font-weight: 1000;
     /* font-size: 1.5vw; */
 }
+.on{
+    color: hsl(222, 100%, 75%);
+    font-weight: 1000;
+}
+
 
 /* visual */
 #about_figure{

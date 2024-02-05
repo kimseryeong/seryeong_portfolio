@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/timeline.css">
     
 </head>
 <body>
@@ -39,10 +40,10 @@
     <figure id="about_figure">
         <!-- <video id="myVideo" src="img/sunGlitter.mp4" autoplay muted loop></video> -->
         <div class="inner">
-            <h1>Web Developer Seryeong</h1>
+            <h1>Developer Seryeong</h1>
             <p>
                 안녕하세요<br/>
-                웹 개발자 김세령입니다<br/>
+                개발자 김세령입니다<br/>
                 
             </p>
             <a href="#" class="viewDetail">소개 보기</a>
@@ -55,138 +56,141 @@
     <div id="topButton" style="cursor: pointer"><img src="./img/top.png" id="topButtonImg"></div>
 
     
-    <div id="skill"  class="menu-div">
-        <div class="inner">
-            <!-- <h1 class="menu-title">Tech Stack</h1> -->
-            <div class="inner-wrap">
-                
-                <div class="skill-div">
-                    <span class="title">Back</span>
-                    <ul class="skill-list back">
-                        <li>
-                            <span class="skill-title">Java</span>
-                            <div class="bar-background">
-                                <span class="progressbar_java bar"></span>
-                            </div>
-                            <p class="skill-comment">
-                                웹 개발을 위해 자바를 사용하여 객체지향적인 설계 및 개발이 가능합니다.
-                            </p>
-                        </li>
-                        <li>
-                            <span class="skill-title">Python</span>
-                            <div class="bar-background">
-                                <span class="progressbar_python bar"></span>
-                            </div>
-                            <p class="skill-comment">
-                                알고리즘 공부를 위해 파이썬을 사용하고 있습니다. 
-                            </p>
-                        </li>
-                        <li>
-                            <span class="skill-title">Oracle</span>
-                            <div class="bar-background">
-                                <span class="progressbar_oracle bar"></span>
-                            </div>
-                            <p class="skill-comment">
-                                SQL 쿼리문 작성, 데이터베이스 설계/구축이 가능합니다.
-                            </p>
-                        </li>
-                        <li>
-                            <span class="skill-title">eGov Framework</span>
-                            <div class="bar-background">
-                                <span class="progressbar_egov bar"></span>
-                            </div>
-                            <p class="skill-comment">
-                                공공 프로젝트에 참여하여 스프링 기반의 전자정부 프레임워크를 경험했습니다. 
-                            </p>
-                        </li>
-                        <li>
-                            <span class="skill-title">Spring boot</span>
-                            <div class="bar-background">
-                                <span class="progressbar_springboot bar"></span>
-                            </div>
-                            <p class="skill-comment">
-                                spring boot 프레임워크를 경험했습니다.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="skill-div">
-                    <span class="title">Front</span>
-                    <ul class="skill-list front">
-                        <li>
-                            <span class="skill-title">Javascript</span>
-                            <div class="bar-background">
-                                <span class="progressbar_javascript bar"></span>
-                            </div>
-                            <p class="skill-comment">
-                                라이브러리 활용 등 웹 서비스를 구축하는데 필요한 기능 개발이 가능합니다.
-                            </p>
-                        </li>
-                        <li>
-                            <span class="skill-title">Html</span>
-                            <div class="bar-background">
-                                <span class="progressbar_html bar"></span>
-                            </div>
-                            <p class="skill-comment">
-                                사용자 친화적인 웹 UI를 위해 html 활용이 가능합니다.
-                            </p>
-                        </li>
-                        <li>
-                            <span class="skill-title">Css</span>
-                            <div class="bar-background">
-                                <span class="progressbar_css bar"></span>
-                            </div>
-                            <p class="skill-comment">
-                                사용자 친화적인 웹 UI를 위해 css 활용이 가능합니다.
-                            </p>
-                        </li>
-                        
-                    </ul>
-                </div>
-                <div class="skill-div">
-                    <span class="title">Etc</span>
-                    <ul class="skill-list scm">
-                        <li>
-                            <span class="skill-title">SVN</span>
-                            <div class="bar-background">
-                                <span class="progressbar_svn bar"></span>
-                            </div>
-                            <p class="skill-comment">
-                                공공 프로젝트에 참여했을 때, svn을 통한 협업 경험이 있습니다.
-                            </p>
-                        </li>
-                        <li>
-                            <span class="skill-title">Git</span>
-                            <div class="bar-background">
-                                <span class="progressbar_git bar"></span>
-                            </div>
-                            <p class="skill-comment">
-                                개인 프로젝트와 팀프로젝트를 위해 git & github 협업 경험이 있습니다.
-                            </p>
-                        </li>
-                        <li>
-                            <span class="skill-title">Jenkins</span>
-                            <div class="bar-background">
-                                <span class="progressbar_jenkins bar"></span>
-                            </div>
-                            <p class="skill-comment">
-                                젠킨스를 활용한 운영 배포 경험이 있습니다.
-                            </p>
-                        </li>
-                    </ul>
+    <section id="skill">
+    
+        <div  class="menu-div">
+            <div class="inner">
+                <!-- <h1 class="menu-title">Tech Stack</h1> -->
+                <div class="inner-wrap">
+                    
+                    <div class="skill-div">
+                        <span class="title">Back</span>
+                        <ul class="skill-list back">
+                            <li>
+                                <span class="skill-title">Java</span>
+                                <div class="bar-background">
+                                    <span class="progressbar_java bar"></span>
+                                </div>
+                                <p class="skill-comment">
+                                    웹 개발을 위해 자바를 사용하여 객체지향적인 설계 및 개발이 가능합니다.
+                                </p>
+                            </li>
+                            <li>
+                                <span class="skill-title">Python</span>
+                                <div class="bar-background">
+                                    <span class="progressbar_python bar"></span>
+                                </div>
+                                <p class="skill-comment">
+                                    알고리즘 공부를 위해 파이썬을 사용하고 있습니다. 
+                                </p>
+                            </li>
+                            <li>
+                                <span class="skill-title">Oracle</span>
+                                <div class="bar-background">
+                                    <span class="progressbar_oracle bar"></span>
+                                </div>
+                                <p class="skill-comment">
+                                    SQL 쿼리문 작성, 데이터베이스 설계/구축이 가능합니다.
+                                </p>
+                            </li>
+                            <li>
+                                <span class="skill-title">eGov Framework</span>
+                                <div class="bar-background">
+                                    <span class="progressbar_egov bar"></span>
+                                </div>
+                                <p class="skill-comment">
+                                    공공 프로젝트에 참여하여 스프링 기반의 전자정부 프레임워크를 경험했습니다. 
+                                </p>
+                            </li>
+                            <li>
+                                <span class="skill-title">Spring boot</span>
+                                <div class="bar-background">
+                                    <span class="progressbar_springboot bar"></span>
+                                </div>
+                                <p class="skill-comment">
+                                    spring boot 프레임워크를 경험했습니다.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-div">
+                        <span class="title">Front</span>
+                        <ul class="skill-list front">
+                            <li>
+                                <span class="skill-title">Javascript</span>
+                                <div class="bar-background">
+                                    <span class="progressbar_javascript bar"></span>
+                                </div>
+                                <p class="skill-comment">
+                                    라이브러리 활용 등 웹 서비스를 구축하는데 필요한 기능 개발이 가능합니다.
+                                </p>
+                            </li>
+                            <li>
+                                <span class="skill-title">Html</span>
+                                <div class="bar-background">
+                                    <span class="progressbar_html bar"></span>
+                                </div>
+                                <p class="skill-comment">
+                                    사용자 친화적인 웹 UI를 위해 html 활용이 가능합니다.
+                                </p>
+                            </li>
+                            <li>
+                                <span class="skill-title">Css</span>
+                                <div class="bar-background">
+                                    <span class="progressbar_css bar"></span>
+                                </div>
+                                <p class="skill-comment">
+                                    사용자 친화적인 웹 UI를 위해 css 활용이 가능합니다.
+                                </p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="skill-div">
+                        <span class="title">Etc</span>
+                        <ul class="skill-list scm">
+                            <li>
+                                <span class="skill-title">SVN</span>
+                                <div class="bar-background">
+                                    <span class="progressbar_svn bar"></span>
+                                </div>
+                                <p class="skill-comment">
+                                    svn을 통한 소스코드 공유, 협업 경험이 있습니다.
+                                </p>
+                            </li>
+                            <li>
+                                <span class="skill-title">Git</span>
+                                <div class="bar-background">
+                                    <span class="progressbar_git bar"></span>
+                                </div>
+                                <p class="skill-comment">
+                                    개인 프로젝트와 팀프로젝트를 위해 git & github 협업 경험이 있습니다.
+                                </p>
+                            </li>
+                            <li>
+                                <span class="skill-title">Jenkins</span>
+                                <div class="bar-background">
+                                    <span class="progressbar_jenkins bar"></span>
+                                </div>
+                                <p class="skill-comment">
+                                    젠킨스를 활용한 운영 배포 경험이 있습니다.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
+            
+    </section>
 
     <div class="menu-div" id="project">
         <div class="swiper">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
 
-                    <div class="swiper-slide slide1 card">
+                    <!-- <div class="swiper-slide slide1 card">
                         <div class="card-inner">
                             <div class="front-content">
                                 <p class="ptj_subject">미니 쇼핑몰 웹사이트</p> 
@@ -245,7 +249,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="swiper-slide slide2 card">
                         <div class="card-inner">
@@ -279,6 +283,10 @@
                                         <li>
                                             <span>🔹</span>
                                             <span>Swiper.js 라이브러리를 사용하여 슬라이드 기능 구현</span>
+                                        </li>
+                                        <li>
+                                            <span>🔹</span>
+                                            <span>Git pages 통한 배포 경험</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -436,14 +444,39 @@
         </div>
     </div>
 
-    <div id="resume" class="menu-div">
-        <div class="inner">
-            <h1 class="menu-title">Resume</h1>
+    <section id="resume">
+        <div class="menu-div">
+            <div class="inner">
+                <!-- <h1 class="menu-title">Resume</h1> -->
 
-            
+                <div class="box">
+                    <ul id="first-list">
+                        <li>
+                            <span></span>
+                            <div class="timeline_title">웹개발자</div>
+                            <div class="info">the best animation , the best toturials you would ever see .</div>
+                            <div class="name">- dr. mohamed -</div>
+                            <div class="time">
+                                <span>2024.02</span>
+                                <span>2022.12</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span></span>
+                            <div class="timeline_title">산업공학과 학사</div>
+                            <div class="info">
+                                산업공학을 전공하였습니다.
+                            </div>
+                            <div class="name">- eng. amr -</div>
+                            <div class="time">
+                                <span>2023.02</span>
+                                <span>2018.03</span>
+                            </div>
+                        </li>
+                
+            </div>
         </div>
-    </div>
-
+    </section>
 
 
 
