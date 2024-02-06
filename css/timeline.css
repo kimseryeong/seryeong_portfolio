@@ -1,29 +1,26 @@
-body{
-    margin: 0;
-    padding: 0;
-    /* background-color:hsl(222, 100%, 75%); */
-    font-family: arial
-}
+
 
 .box{
     margin:0 10%;
-    height: 630px;
-    overflow: hidden;
-    padding: 10px 0 40px 60px
+    /* height: 630px; */
+    /* overflow: hidden; */
+    display: flex;
+    padding: 40px 0;
 }
 
 .box ul{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin-top: 50px;
+    /* padding: 0; */
     position: relative;
     transition: all 0.5s linear;
     top:0
 }
 
-.box ul:last-of-type{top:80px}
+/* .box ul:last-of-type{top:80px} */
 
-.box ul:before{
+.box ul::before{
+
     content: "";
     display: block;
     width: 0;
@@ -31,11 +28,22 @@ body{
     border:1px dashed hsl(213, 81%, 90%);
     position: absolute;
     top:0;
-    left:30px
+}
+.rsm_timeline ul:before{
+    left:80px
+}
+.rsm_cert ul:before{
+    /* content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    border:1px dashed hsl(213, 81%, 90%);
+    position: absolute;
+    top:0; */
+    left:5%
 }
 
 .box ul li{
-    margin: 20px 60px 60px;
     position: relative;
     padding: 10px 20px;
     background-color: #edf5ff;
@@ -46,8 +54,18 @@ body{
     /* width: 35% */
 }
 
+.rsm_timeline{
+    width: 75%;
+}
+.rsm_timeline ul{
+    padding-left: 50px;
+}
+.rsm_timeline ul li{
+    margin: 20px 0px 60px 60px;
+}
 
-.box ul li > span{
+
+.rsm_timeline ul li > span{
     content: "";
     display: block;
     width: 0;
@@ -58,7 +76,7 @@ body{
     left:-30px
 }
 
-.box ul li > span:before,.box ul li > span:after{
+.rsm_timeline ul li > span:before,.rsm_timeline ul li > span:after{
     content: "";
     display: block;
     width: 10px;
@@ -70,16 +88,35 @@ body{
     left:-7.5px
 }
 
-.box ul li > span:before{top:-10px}
-.box ul li > span:after{top:95%}
+.rsm_timeline ul li > span:before{top:-10px}
+.rsm_timeline ul li > span:after{top:95%}
+
+.rsm_cert{
+    width: 20%;
+}
+.rsm_cert ul li{
+    display: flex;
+    margin: 35px 0;
+    font-weight: 700;
+}    
+
+.cert_date{   
+    margin-left: auto;
+    right: auto;
+    font-size: 12px;
+    font-weight: 500;
+}
 
 .box .timeline_title{
     text-transform: uppercase;
     font-weight: 700;
-    margin-bottom: 5px
+    margin-bottom: 10px
 }
 
 .box .info:first-letter{text-transform: capitalize;line-height: 1.7}
+.info{
+    font-size: 14px;
+}
 
 .box .name{
     margin-top: 10px;
@@ -123,6 +160,10 @@ body{
     left: 22%;
     transform: rotateX(180deg);
     cursor: pointer;
+}
+
+.rsm_cert{
+    margin-left: auto;
 }
 
 svg{

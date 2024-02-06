@@ -22,38 +22,44 @@
     
     <header>
         <div class="inner">
-            <a href="https://github.com/kimseryeong" target="_blank">
+            <a href="https://github.com/kimseryeong/portfolio_" target="_blank">
                 <img src="./img/github.png">
             </a>
 
             <ul id="gnb"> <!-- 주 메뉴의 아이디명 : global navigation bar -->
-                <!-- <li><a href="#about_figure" class="scroll">About</a></li> -->
-                <li><a href="#skill" class="scroll">Tech Stack</a></li>
-                <li><a href="#project" class="scroll">Project</a></li>
-                <li><a href="#resume" class="scroll">Resume</a></li>
-                <li><a href="#contact_footer" class="scroll">Contact</a></li>
+                <li><a id="scll_about" href="#about" class="scroll on">About Me</a></li>
+                <li><a id="scll_skill" href="#skill" class="scroll">Tech Stack</a></li>
+                <li><a id="scll_pjt" href="#project" class="scroll">Project</a></li>
+                <li><a id="scll_rsm" href="#resume" class="scroll">Resume</a></li>
+                <li><a id="scll_contact" href="#contact" class="scroll">Contact</a></li>
             </ul>
                 
         </div>
     </header>
-
-    <figure id="about_figure">
-        <!-- <video id="myVideo" src="img/sunGlitter.mp4" autoplay muted loop></video> -->
-        <div class="inner">
-            <h1>Developer Seryeong</h1>
-            <p>
-                안녕하세요<br/>
-                개발자 김세령입니다<br/>
-                
-            </p>
-            <a href="#" class="viewDetail">소개 보기</a>
-        </div>
-        <div class="img">
-            <img src="./img/mimo.png">
-        </div>
-    </figure>
-
+    
     <div id="topButton" style="cursor: pointer"><img src="./img/top.png" id="topButtonImg"></div>
+
+    <section id="about">
+        <figure id="about_figure">
+            <!-- <video id="myVideo" src="img/sunGlitter.mp4" autoplay muted loop></video> -->
+            <div class="inner">
+                <h1>Developer Seryeong</h1>
+                <p>
+                    안녕하세요<br/>
+                    개발자 김세령입니다<br/>
+                    
+                </p>
+                <a href="javascript:fnViewDetail()" class="viewDetail">소개 보기</a>
+                <div id="about_info" style="display: none;" class="about_info">
+                    경력 : 2022.12 - 현재 (약 1년 3개월)
+                </div>
+            </div>
+            <div class="img">
+                <img src="./img/mimo.png">
+            </div>
+        </figure>
+
+    </section>
 
     
     <section id="skill">
@@ -64,7 +70,7 @@
                 <div class="inner-wrap">
                     
                     <div class="skill-div">
-                        <span class="title">Back</span>
+                        <span class="title">Language</span>
                         <ul class="skill-list back">
                             <li>
                                 <span class="skill-title">Java</span>
@@ -73,15 +79,6 @@
                                 </div>
                                 <p class="skill-comment">
                                     웹 개발을 위해 자바를 사용하여 객체지향적인 설계 및 개발이 가능합니다.
-                                </p>
-                            </li>
-                            <li>
-                                <span class="skill-title">Python</span>
-                                <div class="bar-background">
-                                    <span class="progressbar_python bar"></span>
-                                </div>
-                                <p class="skill-comment">
-                                    알고리즘 공부를 위해 파이썬을 사용하고 있습니다. 
                                 </p>
                             </li>
                             <li>
@@ -94,12 +91,45 @@
                                 </p>
                             </li>
                             <li>
+                                <span class="skill-title">Javascript</span>
+                                <div class="bar-background">
+                                    <span class="progressbar_javascript bar"></span>
+                                </div>
+                                <p class="skill-comment">
+                                    라이브러리 활용 등 웹 서비스를 구축하는데 필요한 기능 개발이 가능합니다.
+                                </p>
+                            </li>
+                            <li>
+                                <span class="skill-title">Html/Css</span>
+                                <div class="bar-background">
+                                    <span class="progressbar_html bar"></span>
+                                </div>
+                                <p class="skill-comment">
+                                    인터랙티브한 웹 UI를 위한 html/css 활용이 가능합니다.
+                                </p>
+                            </li>
+                            <li>
+                                <span class="skill-title">Python</span>
+                                <div class="bar-background">
+                                    <span class="progressbar_python bar"></span>
+                                </div>
+                                <p class="skill-comment">
+                                    알고리즘 공부를 위해 파이썬을 사용하고 있습니다. 
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-div">
+                        <span class="title">Framework</span>
+                        <ul class="skill-list front">
+                            <li>
                                 <span class="skill-title">eGov Framework</span>
                                 <div class="bar-background">
                                     <span class="progressbar_egov bar"></span>
                                 </div>
                                 <p class="skill-comment">
-                                    공공 프로젝트에 참여하여 스프링 기반의 전자정부 프레임워크를 경험했습니다. 
+                                    스프링 기반의 전자정부 프레임워크를 경험했습니다. 
                                 </p>
                             </li>
                             <li>
@@ -111,31 +141,7 @@
                                     spring boot 프레임워크를 경험했습니다.
                                 </p>
                             </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="skill-div">
-                        <span class="title">Front</span>
-                        <ul class="skill-list front">
-                            <li>
-                                <span class="skill-title">Javascript</span>
-                                <div class="bar-background">
-                                    <span class="progressbar_javascript bar"></span>
-                                </div>
-                                <p class="skill-comment">
-                                    라이브러리 활용 등 웹 서비스를 구축하는데 필요한 기능 개발이 가능합니다.
-                                </p>
-                            </li>
-                            <li>
-                                <span class="skill-title">Html</span>
-                                <div class="bar-background">
-                                    <span class="progressbar_html bar"></span>
-                                </div>
-                                <p class="skill-comment">
-                                    사용자 친화적인 웹 UI를 위해 html 활용이 가능합니다.
-                                </p>
-                            </li>
-                            <li>
+                            <!-- <li>
                                 <span class="skill-title">Css</span>
                                 <div class="bar-background">
                                     <span class="progressbar_css bar"></span>
@@ -143,7 +149,7 @@
                                 <p class="skill-comment">
                                     사용자 친화적인 웹 UI를 위해 css 활용이 가능합니다.
                                 </p>
-                            </li>
+                            </li> -->
                             
                         </ul>
                     </div>
@@ -185,264 +191,330 @@
             
     </section>
 
-    <div class="menu-div" id="project">
-        <div class="swiper">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
+    <section id="project">
 
-                    <!-- <div class="swiper-slide slide1 card">
-                        <div class="card-inner">
-                            <div class="front-content">
-                                <p class="ptj_subject">미니 쇼핑몰 웹사이트</p> 
-                                <p class="intro">
-                                    마켓컬리를 모토로 식품을 판매하는 쇼핑몰을 만들ㅇ
-                                </p>
-                                
-                                <div class="content">
-                                    <img class="pjt_img" src="./img/kitten2.jpeg" alt="img">
+        <div class="menu-div">
+            <div class="swiper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+    
+                        <!-- <div class="swiper-slide slide1 card">
+                            <div class="card-inner">
+                                <div class="front-content">
+                                    <p class="ptj_subject">미니 쇼핑몰 웹사이트</p> 
+                                    <p class="intro">
+                                        마켓컬리를 모토로 식품을 판매하는 쇼핑몰을 만들ㅇ
+                                    </p>
+                                    
+                                    <div class="content">
+                                        <img class="pjt_img" src="./img/kitten2.jpeg" alt="img">
+                                    </div>
+                                    <div class="tail">
+                                        <span class="tail-left">
+                                            Toy Project (2인)
+                                        </span>
+                                        <span class="tail-right">23.01.05 ~ 24.01.23</span>
+                                    </div>
                                 </div>
-                                <div class="tail">
-                                    <span class="tail-left">
-                                        Toy Project (2인)
-                                    </span>
-                                    <span class="tail-right">23.01.05 ~ 24.01.23</span>
+    
+                                <div class="back-content">
+                                    <div class="pjt_role">
+                                        <span class="pjt_subTitle">역할</span>
+                                        <div class="roles">
+                                            <span class="role">프론트엔드</span>
+                                            <span class="role">백엔드</span>
+                                        </div>
+                                    </div>
+                                    <div class="pjt_skill">
+                                        <span class="pjt_subTitle">개발내용</span>
+                                        <ul>
+                                            <li>
+                                                <span>🔹</span>
+                                                <span>AWS의 RDS를 사용한 클라우드 DB서버 사용, DB 설계</span>
+                                            </li>
+                                            <li>
+                                                <span>🔹</span>
+                                                <span>REAT API </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="pjt_back_bottom">
+                                        <div class="stack-div">
+                                            <span class="stack">java</span>
+                                            <span class="stack">springboot</span>
+                                            <span class="stack">javascript</span>
+                                            <span class="stack">mysql</span>
+                                            <span class="stack">aws</span>
+                                        </div>
+                                        <div class="pjt_desc">
+                                            <p class="desc">
+                                                초기 환경설정부터 DB 연결, 화면 설계, 구현, 테스트까지
+                                                전 단계를 경험해보고자 쇼핑몰 사이트로 주제를 선정했고,
+                                                기존의 프로젝트와 다르게 경험에 초점을 맞추어 개발하였습니다.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="back-content">
-                                <div class="pjt_role">
-                                    <span class="pjt_subTitle">역할</span>
-                                    <div class="roles">
-                                        <span class="role">프론트엔드</span>
-                                        <span class="role">백엔드</span>
+                        </div> -->
+    
+                        <div class="swiper-slide slide2 card">
+                            <div class="card-inner">
+                                <div class="front-content">
+                                    <p class="ptj_subject">포트폴리오</p> 
+                                    <p class="intro">
+                                        개발자 포트폴리오 웹사이트 개발
+                                    </p>
+                                    
+                                    <div class="content">
+                                        <img class="pjt_img" src="./img/kitten4.jpeg" alt="img">
+                                    </div>
+                                    <div class="tail">
+                                        <span class="tail-left">
+                                            Solo Project
+                                        </span>
+                                        <span class="tail-right">24.01.05 ~ 01.20</span>
                                     </div>
                                 </div>
-                                <div class="pjt_skill">
-                                    <span class="pjt_subTitle">개발내용</span>
-                                    <ul>
-                                        <li>
-                                            <span>🔹</span>
-                                            <span>AWS의 RDS를 사용한 클라우드 DB서버 사용, DB 설계</span>
-                                        </li>
-                                        <li>
-                                            <span>🔹</span>
-                                            <span>REAT API </span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="pjt_back_bottom">
-                                    <div class="stack-div">
-                                        <span class="stack">java</span>
-                                        <span class="stack">springboot</span>
-                                        <span class="stack">javascript</span>
-                                        <span class="stack">mysql</span>
-                                        <span class="stack">aws</span>
+                                
+                                <div class="back-content">
+                                    <div class="pjt_role">
+                                        <span class="pjt_subTitle">역할</span>
+                                        <div class="roles">
+                                            <span class="role">1인개발</span>
+                                        </div>
                                     </div>
-                                    <div class="pjt_desc">
-                                        <p class="desc">
-                                            초기 환경설정부터 DB 연결, 화면 설계, 구현, 테스트까지
-                                            전 단계를 경험해보고자 쇼핑몰 사이트로 주제를 선정했고,
-                                            기존의 프로젝트와 다르게 경험에 초점을 맞추어 개발하였습니다.
-                                        </p>
+                                    <div class="pjt_skill">
+                                        <span class="pjt_subTitle">기술</span>
+                                        <ul>
+                                            <li>
+                                                <span>🔹</span>
+                                                <span>Swiper.js 라이브러리를 사용하여 슬라이드 기능 구현</span>
+                                            </li>
+                                            <li>
+                                                <span>🔹</span>
+                                                <span>Git pages 통한 배포 경험</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="pjt_back_bottom">
+                                        <div class="stack-div">
+                                            <span class="stack">javascript</span>
+                                            <span class="stack">html/css</span>
+                                            
+                                        </div>
+                                        <div class="pjt_desc">
+                                            <p class="desc">
+                                                기존의 pdf 형식의 포트폴리오에서 확장성 있게 관리할 수 있도록
+                                                포트폴리오 사이트를 만들었습니다. <br>
+                                                다양한 프론트엔드 기술을 사용하도록 노력하였습니다.
+                                            </p>
+                                        </div>
+    
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div> -->
-
-                    <div class="swiper-slide slide2 card">
-                        <div class="card-inner">
-                            <div class="front-content">
-                                <p class="ptj_subject">포트폴리오</p> 
-                                <p class="intro">
-                                    개발자 포트폴리오 웹사이트 개발
-                                </p>
-                                
-                                <div class="content">
-                                    <img class="pjt_img" src="./img/kitten4.jpeg" alt="img">
-                                </div>
-                                <div class="tail">
-                                    <span class="tail-left">
-                                        Solo Project
-                                    </span>
-                                    <span class="tail-right">24.01.05 ~ 01.20</span>
-                                </div>
-                            </div>
-                            
-                            <div class="back-content">
-                                <div class="pjt_role">
-                                    <span class="pjt_subTitle">역할</span>
-                                    <div class="roles">
-                                        <span class="role">1인개발</span>
+                        <div class="swiper-slide slide3 card">
+                            <div class="card-inner">
+                                <div class="front-content">
+                                    <p class="ptj_subject">외국인 대상 레시피 추천 웹서비스</p> 
+                                    <p class="intro">
+                                        Yolov7과 OCR 기반 식재료 이미지 및 영수증 분석을 활용한 <br>
+                                        외국인 대상 레시피 추천 서비스
+                                    </p>
+                                    <div class="content">
+                                        <img class="pjt_img" src="./img/insertIngredient.png" alt="img">
+                                    </div>
+                                    <div class="tail">
+                                        <span class="tail-left">
+                                            Team Project(5인)
+                                        </span>
+                                        <span class="tail-right">22.09.05 ~ 10.19</span>
                                     </div>
                                 </div>
-                                <div class="pjt_skill">
-                                    <span class="pjt_subTitle">기술</span>
-                                    <ul>
-                                        <li>
-                                            <span>🔹</span>
-                                            <span>Swiper.js 라이브러리를 사용하여 슬라이드 기능 구현</span>
-                                        </li>
-                                        <li>
-                                            <span>🔹</span>
-                                            <span>Git pages 통한 배포 경험</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="pjt_back_bottom">
-                                    <div class="stack-div">
-                                        <span class="stack">javascript</span>
-                                        <span class="stack">html/css</span>
-                                        
-                                    </div>
-                                    <div class="pjt_desc">
-                                        <p class="desc">
-                                            기존의 pdf 형식의 포트폴리오에서 확장성 있게 관리할 수 있도록
-                                            포트폴리오 사이트를 만들었습니다. <br>
-                                            다양한 프론트엔드 기술을 사용하도록 노력하였습니다.
-                                        </p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide slide3 card">
-                        <div class="card-inner">
-                            <div class="front-content">
-                                <p class="ptj_subject">외국인 대상 레시피 추천 웹서비스</p> 
-                                <p class="intro">
-                                    Yolov7과 OCR 기반 식재료 이미지 및 영수증 분석을 활용한 <br>
-                                    외국인 대상 레시피 추천 서비스
-                                </p>
-                                <div class="content">
-                                    <img class="pjt_img" src="./img/insertIngredient.png" alt="img">
-                                </div>
-                                <div class="tail">
-                                    <span class="tail-left">
-                                        Team Project(5인)
-                                    </span>
-                                    <span class="tail-right">22.09.05 ~ 10.19</span>
-                                </div>
-                            </div>
-                            <div class="back-content">
-                                <div class="pjt_role">
-                                    <span class="pjt_subTitle">역할</span>
-                                    <div class="roles">
-                                        <span class="role">백엔드</span>
-                                    </div>
-                                </div>
-                                
-                                <div class="pjt_skill">
-                                    <span class="pjt_subTitle">기술</span>
-                                    <ul>
-                                        <li>
-                                            <span>🔹</span>
-                                            <span>DB 설계 및 구축, 관리</span>
-                                        </li>
-                                        <li>
-                                            <span>🔹</span>
-                                            <span>flask 서버와 springboot 서버를 ajax 통신을 통해 연동하여 
-                                                식재료 이미지 및 영수증 업로드 기능 구현</span>
-                                        </li>
-                                        <li>
-                                            <span>🔹</span>
-                                            <span>레시피 상세 페이지 기능 구현</span>
-                                        </li>
-                                        <li>
-                                            <span>🔹</span>
-                                            <span>마이페이지의 찜 기능 구현</span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="pjt_back_bottom">
-                                    <div class="pjt_stack">
-                                        <span class="stack">java</span>
-                                        <span class="stack">springboot</span>
-                                        <span class="stack">mysql</span>
-                                        <span class="stack">bootstrap</span>
+                                <div class="back-content">
+                                    <div class="pjt_role">
+                                        <span class="pjt_subTitle">역할</span>
+                                        <div class="roles">
+                                            <span class="role">백엔드</span>
+                                        </div>
                                     </div>
                                     
-                                    <div class="pjt_desc">
-                                        <p class="desc">
-                                            외국인을 대상으로한 레시피 추천 서비스로써 식재료 사진 또는 영수증 업로드 시
-                                            해당 식재료가 포함된 레시피가 조회되는 서비스입니다.
-                                        </p>
-                                    </div> 
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide slide4 card">
-                        <div class="card-inner">
-                            <div class="front-content">
-                                <p class="ptj_subject">개인 맞춤형 운동 추천 웹서비스</p> 
-                                <p class="intro">
-                                    설문조사 기반의 개인 맞춤형 운동 추천 서비스
-                                </p>
-                                
-                                <div class="content">
-                                    <img class="pjt_img" src="./img/kitten1.jpg" alt="img">
-                                </div>
-                                <div class="tail">
-                                    <span class="tail-left">
-                                        Team Project(5인)
-                                    </span>
-                                    <span class="tail-right">22.07 ~ 08</span>
-                                </div>
-                            </div>
-                            <div class="back-content">
-                                <div class="pjt_role">
-                                    <span class="pjt_subTitle">역할</span>
-                                    <div class="roles">
-                                        <span class="role">프론트엔드</span>
-                                        <span class="role">퍼블리싱</span>
+                                    <div class="pjt_skill">
+                                        <span class="pjt_subTitle">기술</span>
+                                        <ul>
+                                            <li>
+                                                <span>🔹</span>
+                                                <span>DB 설계 및 구축, 관리</span>
+                                            </li>
+                                            <li>
+                                                <span>🔹</span>
+                                                <span>flask 서버와 springboot 서버를 ajax 통신을 통해 연동하여 
+                                                    식재료 이미지 및 영수증 업로드 기능 구현</span>
+                                            </li>
+                                            <li>
+                                                <span>🔹</span>
+                                                <span>레시피 상세 페이지 기능 구현</span>
+                                            </li>
+                                            <li>
+                                                <span>🔹</span>
+                                                <span>마이페이지의 찜 기능 구현</span>
+                                            </li>
+                                        </ul>
                                     </div>
-                                </div>
-                                <div class="pjt_skill">
-                                    <span class="pjt_subTitle">기술</span>
-                                    <ul>
-                                        <li>
-                                            <span>🔹</span>
-                                            <span>웹페이지 전체 화면 설계 및 퍼블리싱</span>
-                                        </li>
+    
+                                    <div class="pjt_back_bottom">
+                                        <div class="pjt_stack">
+                                            <span class="stack">java</span>
+                                            <span class="stack">springboot</span>
+                                            <span class="stack">mysql</span>
+                                            <span class="stack">bootstrap</span>
+                                        </div>
                                         
-                                    </ul>
-                                </div>
-                                
-                                <div class="pjt_back_bottom">
-                                    <div class="stack-div">
-                                        <span class="stack">javascript</span>
-                                        <span class="stack">html/css</span>
-                                        <span class="stack">bootstrap</span>
-                                    </div>
-                                    <div class="pjt_desc">
-                                        <p class="desc">
-                                            사용자 설문 기반의 맞춤형 운동 추천 서비스로써
-                                            설문결과에 따라 유튜브 영상, 체육관, 트레이너 정보가 조회되고
-                                            맞춤 루틴 캘린더를 제공받는 서비스입니다.
-                                        </p>
+                                        <div class="pjt_desc">
+                                            <p class="desc">
+                                                외국인을 대상으로한 레시피 추천 서비스로써 식재료 사진 또는 영수증 업로드 시
+                                                해당 식재료가 포함된 레시피가 조회되는 서비스입니다.
+                                            </p>
+                                        </div> 
+    
+    
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>   
+                        <div class="swiper-slide slide4 card">
+                            <div class="card-inner">
+                                <div class="front-content">
+                                    <p class="ptj_subject">개인 맞춤형 운동 추천 웹서비스</p> 
+                                    <p class="intro">
+                                        설문조사 기반의 개인 맞춤형 운동 추천 서비스
+                                    </p>
+                                    
+                                    <div class="content">
+                                        <img class="pjt_img" src="./img/kitten1.jpg" alt="img">
+                                    </div>
+                                    <div class="tail">
+                                        <span class="tail-left">
+                                            Team Project(5인)
+                                        </span>
+                                        <span class="tail-right">22.07 ~ 08</span>
+                                    </div>
+                                </div>
+                                <div class="back-content">
+                                    <div class="pjt_role">
+                                        <span class="pjt_subTitle">역할</span>
+                                        <div class="roles">
+                                            <span class="role">프론트엔드</span>
+                                            <span class="role">퍼블리싱</span>
+                                        </div>
+                                    </div>
+                                    <div class="pjt_skill">
+                                        <span class="pjt_subTitle">기술</span>
+                                        <ul>
+                                            <li>
+                                                <span>🔹</span>
+                                                <span>웹페이지 전체 화면 설계 및 퍼블리싱</span>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="pjt_back_bottom">
+                                        <div class="stack-div">
+                                            <span class="stack">javascript</span>
+                                            <span class="stack">html/css</span>
+                                            <span class="stack">bootstrap</span>
+                                        </div>
+                                        <div class="pjt_desc">
+                                            <p class="desc">
+                                                사용자 설문 기반의 맞춤형 운동 추천 서비스로써
+                                                설문결과에 따라 유튜브 영상, 체육관, 트레이너 정보가 조회되고
+                                                맞춤 루틴 캘린더를 제공받는 서비스입니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="swiper-slide slide5 card">
+                            <div class="card-inner">
+                                <div class="front-content">
+                                    <p class="ptj_subject">UI/UX 기반의 키오스크 사용성 개선</p> 
+                                    <p class="intro">
+                                        패스트푸드점의 키오스크 사용자를 대상으로 <br> 
+                                        UI/UX 개선을 통한 주문 프로세스 단축
+                                    </p>
+                                    
+                                    <div class="content">
+                                        <img class="pjt_img" src="./img/kitten1.jpg" alt="img">
+                                    </div>
+                                    <div class="tail">
+                                        <span class="tail-left">
+                                            Team Project(5인)
+                                        </span>
+                                        <span class="tail-right">21.03 ~ 10</span>
+                                    </div>
+                                </div>
+                                <div class="back-content">
+                                    <div class="pjt_role">
+                                        <span class="pjt_subTitle">역할</span>
+                                        <div class="roles">
+                                            <span class="role">데이터수집</span>
+                                            <span class="role">데이터분석</span>
+                                            <span class="role">UI 개선</span>
+                                        </div>
+                                    </div>
+                                    <div class="pjt_skill">
+                                        <span class="pjt_subTitle">기술</span>
+                                        <ul>
+                                            <li>
+                                                <span>🔹</span>
+                                                <span>실제 패스트푸드점의 키오스크 이용자를 대상으로 주문 데이터 수집</span>
+                                            </li>
+                                            <li>
+                                                <span>🔹</span>
+                                                <span>미니탭을 통해 수집한 데이터 통계 분석</span>
+                                            </li>
+                                            <li>
+                                                <span>🔹</span>
+                                                <span>키오스크 화면 UI 개선 및 검증실험</span>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="pjt_back_bottom">
+                                        <div class="stack-div">
+                                            <span class="stack">minitab</span>
+                                        </div>
+                                        <div class="pjt_desc">
+                                            <p class="desc">
+                                                키오스크 사용자를 대상으로 주문 데이터를 수집 및 분석하여 많은 시간이 소요되는 화면의 UI를 개선함으로써 
+                                                주문 프로세스를 단축시킨 프로젝트입니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+            
+                    
+                    <div class="swiper-button-prev">
+                        <img class="swiper-btn" src="./img/slide_left.png" alt="이미지">
+                    </div>
+                    <div class="swiper-button-next">
+                        <img class="swiper-btn" src="./img/slide_right.png" alt="이미지">
+                    </div>
                 </div>
         
-                <div class="swiper-button-prev">
-                    <img class="swiper-btn" src="./img/slide_left.png" alt="이미지">
-                </div>
-                <div class="swiper-button-next">
-                    <img class="swiper-btn" src="./img/slide_right.png" alt="이미지">
-                </div>
             </div>
-    
         </div>
-    </div>
+    </section>
 
     <section id="resume">
         <div class="menu-div">
@@ -450,30 +522,66 @@
                 <!-- <h1 class="menu-title">Resume</h1> -->
 
                 <div class="box">
-                    <ul id="first-list">
-                        <li>
-                            <span></span>
-                            <div class="timeline_title">웹개발자</div>
-                            <div class="info">the best animation , the best toturials you would ever see .</div>
-                            <div class="name">- dr. mohamed -</div>
-                            <div class="time">
-                                <span>2024.02</span>
-                                <span>2022.12</span>
-                            </div>
-                        </li>
-                        <li>
-                            <span></span>
-                            <div class="timeline_title">산업공학과 학사</div>
-                            <div class="info">
-                                산업공학을 전공하였습니다.
-                            </div>
-                            <div class="name">- eng. amr -</div>
-                            <div class="time">
-                                <span>2023.02</span>
-                                <span>2018.03</span>
-                            </div>
-                        </li>
-                
+                    <div class="rsm_timeline">
+                        <p class="border_title">Experience</p>
+                        <ul id="timeline-list">
+                            <li>
+                                <span></span>
+                                <div class="timeline_title">웹 개발자</div>
+                                <div class="info">
+                                    풀스택 개발자로서 Java, Javascript를 중점으로 기능 구현을 담당하였습니다.<br>
+                                    <div style="margin-top: 5px; line-height: 1.5;">
+                                        🔹 javascript, jQuery를 이용한 동적 요소 조작 및 RESTful API 통신 처리 <br>
+                                        🔹 서버 사이드 렌더링, 데이터베이스 SQL 쿼리 작성 <br>
+                                        🔹 배치 스케줄러 구현
+                                    </div>
+                                </div>
+                                <!-- <div class="name">- dr. mohamed -</div> -->
+                                <div class="time">
+                                    <span>2024.02</span>
+                                    <span>2022.12</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span></span>
+                                <div class="timeline_title">산업공학과 학사</div>
+                                <div class="info">
+                                    <!-- 산업공학을 전공하였습니다. -->
+                                </div>
+                                <!-- <div class="name">- eng. amr -</div> -->
+                                <div class="time">
+                                    <span>2023.02</span>
+                                    <span>2018.03</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="rsm_cert">
+                        <p class="border_title">Certificate</p>
+                        <ul>
+                            <li>
+                                <span>정보처리기사</span>
+                                <span class="cert_date">2023.06</span>
+                            </li>
+                            <li>
+                                <span>SQL 개발자 (SQLD)</span>
+                                <span class="cert_date">2022.09</span>
+                            </li>
+                            <li>
+                                
+                                <span>사무자동화산업기사</span>
+                                <span class="cert_date">2021.12</span>
+                            </li>
+                            <li>
+                                <span>컴퓨터활용능력1급</span>
+                                <span class="cert_date">2021.01</span>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -481,7 +589,7 @@
 
 
 
-    <footer id="contact_footer">
+    <footer id="contact">
         <div class="inner">
             <div class="upper">
                 <h1>Contact</h1>
