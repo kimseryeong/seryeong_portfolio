@@ -8,6 +8,9 @@ $(document).ready(function(){
             var top = section.offsetTop;
             var bottom = top + section.offsetHeight;
     
+            if(top != 0){
+                top = top - 10
+            }
             console.log('section top : ', top + ' & bottom : ' + bottom);
 
             if (top <= scrollPosition && scrollPosition < bottom-10) {
@@ -18,7 +21,7 @@ $(document).ready(function(){
     });
 
     //새로고침 시 스크롤 top
-    $("html, body").animate({ scrollTop: 0 }, "slow"); 
+    //$("html, body").animate({ scrollTop: 0 }, "slow"); 
 
     // 메뉴 스크롤
     fnMenuScroll();
@@ -37,13 +40,13 @@ function fnViewDetail(){
     var btn = document.getElementById('about_info');
 
     if(btn.classList[1] === 'toggle'){
-        $('.viewDetail').html('소개 보기')
+        $('.viewDetail').html('profile')
         btn.classList.remove('toggle');
     }
     else{
         btn.classList.add('toggle');
         $('.toggle').show();
-        $('.viewDetail').html('소개 닫기')
+        $('.viewDetail').html('profile close')
     }
 }
 

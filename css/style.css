@@ -179,6 +179,10 @@ figure .inner p{
     display: none;
     margin: 30px;
 }
+.about_info table td{
+    height: 35px;
+
+}
 .toggle{
     display: block;
 }
@@ -555,11 +559,11 @@ figure .inner a:hover{
     background-color: #deedff;
 }
 
-
+.pjt-div{height: 650px;}
 .menu-div{
 	width: 100%;
     padding-top: 100px;
-    height: 650px;
+    /* height: 650px; */
 }
 .inner{
 	margin: 0px auto;

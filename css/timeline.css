@@ -61,7 +61,7 @@
     padding-left: 50px;
 }
 .rsm_timeline ul li{
-    margin: 20px 0px 60px 60px;
+    margin: 10px 0px 60px 60px;
 }
 
 
@@ -131,11 +131,11 @@
     position: absolute;
     left: -100px;
     color: black;
-    font-size:80%;
+    /* font-size:80%; */
     font-weight: bold;
 }
-.box .time span:first-child{top:-16px}
-.box .time span:last-child{top:94%}
+.box .time span:first-child{top:-12px}
+/* .box .time span:last-child{top:94%} */
 
 
 .arrow{
@@ -162,6 +162,21 @@
     cursor: pointer;
 }
 
+#timeline-list p{
+}
+.date{
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 60px;
+
+}
+.timeline_intro {
+    margin-top: 5px;
+    line-height: 1.5;
+}
+.timeline_intro table td{
+    height: 15px;
+}
 .rsm_cert{
     margin-left: auto;
 }
