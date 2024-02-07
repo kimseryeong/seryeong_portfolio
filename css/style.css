@@ -108,8 +108,13 @@ header .inner #gnb li a:hover{
 	overflow: hidden;
     padding: 200px 50px 30px 50px;
 }
+
+#about_figure .inner{
+    display: flex;
+}
+
 .img{
-    margin-right: 155px;
+    margin-left: 80px;
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -299,7 +304,7 @@ figure .inner a:hover{
 }
 
 .tail{
-    margin-top: 15px;
+    margin-top: 15%;
     display: flex;
     font: 600 14px 'NanumSquare', sans-serif;
 }
