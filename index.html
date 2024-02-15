@@ -22,9 +22,9 @@
     
     <header>
         <div class="inner">
-            <a href="https://github.com/kimseryeong/portfolio_" target="_blank">
+            <!-- <a href="https://github.com/kimseryeong/portfolio_" target="_blank">
                 <img src="./img/github.png">
-            </a>
+            </a> -->
 
             <ul id="gnb"> <!-- 주 메뉴의 아이디명 : global navigation bar -->
                 <li><a href="#about" class="scroll on">About Me</a></li>
@@ -48,13 +48,27 @@
                     <p>
                         안녕하세요<br/>
                         웹 개발자 김세령입니다<br/>
-                        
+                        클린 코드를 지향하고 유지보수성이 좋은 소프트웨어를 개발하기 위해 노력합니다.
+                        주 언어는 Java이고 
                     </p>
-                    <a href="javascript:fnViewDetail()" class="viewDetail">Profile</a>
+                    <div class="aboutMe_btn">
+                        <a href="javascript:fnViewDetail()" class="viewDetail">Profile</a>
+                        <a href="https://github.com/kimseryeong/portfolio_" target="_blank" class="gitMailImg">
+                            <img src="./img/github.png">
+                        </a>
+                        
+                        <a href="mailto:kxxoo322@gmail.com" class="gitMailImg">
+                            <img src="./img/mail.png">
+                        </a>
+                    </div>
+
                     <div id="about_info" style="display: none;" class="about_info">
                         <table>
                             <tr>
-                                <td>직무경력 : </td>
+                                <td colspan="2">Seoul, South Korea</td>
+                            </tr>
+                            <tr>
+                                <td>경력 : </td>
                                 <td>아이씨티웨이(주)</td>
                             </tr>
                             <tr>
@@ -181,7 +195,7 @@
                                     개인 프로젝트와 팀프로젝트를 위해 git & github 협업 경험이 있습니다.
                                 </p>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <span class="skill-title">Jenkins</span>
                                 <div class="bar-background">
                                     <span class="progressbar_jenkins bar"></span>
@@ -189,7 +203,7 @@
                                 <p class="skill-comment">
                                     젠킨스를 통한 배포 경험이 있습니다.
                                 </p>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -625,7 +639,7 @@
         </div>
         <div class="comment">
             <span>
-                2024.01<br/>
+                ⓒ 2024.kimseryeong<br/>
             </span>
         </div>
     </footer>

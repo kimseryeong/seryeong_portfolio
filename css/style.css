@@ -59,11 +59,14 @@ header .inner{
 	margin: 0px auto;
 	position: relative; /* 자식 absolute 요소의 기준점 설정 */
 }
-header .inner img{
+.aboutMe_btn{
+    display: flex;
+}
+.gitMailImg img{
 	width: 30px;
 	height: 30px;
-	margin: 20px;
-	position: absolute;
+	margin-left: 20px;
+	/* position: absolute; */
 }
 
 header .inner #gnb{
@@ -187,9 +190,12 @@ figure .inner p{
     display: block;
 }
 
-figure .inner a:hover{
+.viewDetail:hover{
 	background-color: #fff;
 	color: #555;
+}
+.gitMailImg img:hover{
+    box-shadow: 3px 3px rgb(0,0,0,0.1);
 }
 .span-line{
     height: 2px;
@@ -742,15 +748,15 @@ margin: 20px 4px;
 
 /* animation */
 .skill-list li .progressbar_java {
-    width: 65%;
+    width: 55%;
     animation: progressbar_java 2s ease-out;
 }
 .skill-list li .progressbar_javascript {
-    width: 70%;
+    width: 60%;
     animation: progressbar_javascript 2s ease-out;
 }
 .skill-list li .progressbar_springboot {
-    width: 50%;
+    width: 45%;
     animation: progressbar_springboot 2s ease-out;
 }
 .skill-list li .progressbar_egov {
@@ -758,11 +764,11 @@ margin: 20px 4px;
     animation: progressbar_egov 2s ease-out;
 }
 .skill-list li .progressbar_oracle {
-    width: 75%;
+    width: 65%;
     animation: progressbar_oracle 2s ease-out;
 }
 .skill-list li .progressbar_html {
-    width: 60%;
+    width: 50%;
     animation: progressbar_html 2s ease-out;
 }
 .skill-list li .progressbar_css {
@@ -782,7 +788,7 @@ margin: 20px 4px;
     animation: progressbar_git 2s ease-out;
 }
 .skill-list li .progressbar_python {
-    width: 60%;
+    width: 40%;
     animation: progressbar_python 2s ease-out;
 }
 
@@ -791,7 +797,7 @@ margin: 20px 4px;
         width: 0%;
     } 
     100% { 
-        width: 65%;
+        width: 55%;
     }  
 }
 @keyframes progressbar_javascript { 
@@ -799,7 +805,7 @@ margin: 20px 4px;
         width: 0%;
     } 
     100% { 
-        width: 70%;
+        width: 60%;
     }  
 }
 @keyframes progressbar_springboot { 
@@ -815,7 +821,7 @@ margin: 20px 4px;
         width: 0%;
     } 
     100% { 
-        width: 50%;
+        width: 45%;
     }  
 }
 @keyframes progressbar_oracle { 
@@ -823,7 +829,7 @@ margin: 20px 4px;
         width: 0%;
     } 
     100% { 
-        width: 75%;
+        width: 65%;
     }  
 }
 @keyframes progressbar_html { 
@@ -831,7 +837,7 @@ margin: 20px 4px;
         width: 0%;
     } 
     100% { 
-        width: 60%;
+        width: 50%;
     }  
 }
 @keyframes progressbar_css { 
@@ -871,6 +877,6 @@ margin: 20px 4px;
         width: 0%;
     } 
     100% { 
-        width: 60%;
+        width: 40%;
     }  
 }
