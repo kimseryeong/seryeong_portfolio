@@ -4,13 +4,13 @@
     margin:0 10%;
     /* height: 630px; */
     /* overflow: hidden; */
-    display: flex;
+    /* display: flex; */
     padding: 40px 0;
 }
 
 .box ul{
     list-style-type: none;
-    margin-top: 50px;
+    margin-top: 20px;
     /* padding: 0; */
     position: relative;
     transition: all 0.5s linear;
@@ -55,7 +55,7 @@
 }
 
 .rsm_timeline{
-    width: 70%;
+    /* width: 70%; */
 }
 .rsm_timeline ul{
     padding-left: 50px;
@@ -91,22 +91,31 @@
 .rsm_timeline ul li > span:before{top:-10px}
 .rsm_timeline ul li > span:after{top:95%}
 
-.rsm_cert{
-    width: 25%;
+.rsm_div{
+    margin-bottom: 30px;
 }
 .rsm_cert ul li{
     display: flex;
-    margin: 35px 0;
+    margin: 15px 0;
     font-weight: 700;
 }    
-
+.rsm_title{
+    border-bottom: 1px solid hsl(213, 81%, 90%);
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 .cert_date{   
     margin-left: auto;
     right: auto;
     font-size: 12px;
     font-weight: 500;
 }
-
+.td{
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
 .box .timeline_title{
     text-transform: uppercase;
     font-weight: 700;
@@ -162,8 +171,6 @@
     cursor: pointer;
 }
 
-#timeline-list p{
-}
 .date{
     font-size: 14px;
     font-weight: 600;
@@ -178,7 +185,14 @@
     height: 15px;
 }
 .rsm_cert{
+    width: 25%;
+}
+.rsm_award{
     margin-left: auto;
+    width: 65%;
+}
+.cert{
+    margin-bottom: 20px;
 }
 
 svg{

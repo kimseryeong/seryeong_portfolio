@@ -62,12 +62,30 @@ header .inner{
 .aboutMe_btn{
     display: flex;
 }
-.gitMailImg img{
+.aboutMeImg img{
 	width: 30px;
 	height: 30px;
 	margin-left: 20px;
 	/* position: absolute; */
 }
+.gitImg img{
+    background-color: #aaadb1;
+    border-radius: 53%;
+    border: 1px solid #aaadb1;
+}
+.gitImg:hover img{
+    content: url('../img/github.png');
+    background-color: #ddecff;
+    border: 1px solid #000;
+}
+.mailImg:hover img{
+    content: url('../img/mail_logo.png');
+    
+}
+
+/* .aboutMeImg img:hover{
+    box-shadow: 3px 3px rgb(0,0,0,0.1);
+} */
 
 header .inner #gnb{
 	position: absolute;
@@ -194,9 +212,7 @@ figure .inner p{
 	background-color: #fff;
 	color: #555;
 }
-.gitMailImg img:hover{
-    box-shadow: 3px 3px rgb(0,0,0,0.1);
-}
+
 .span-line{
     height: 2px;
     width: 70%;
@@ -655,6 +671,9 @@ footer #ContactLogo li span{
 
 .contact-logo{
 	display: flex;
+}
+.contact-logo a:hover{
+    border-bottom: #ddd;
 }
 
 /* skill */
