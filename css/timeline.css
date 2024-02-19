@@ -30,7 +30,7 @@
     top:0;
 }
 .rsm_timeline ul:before{
-    left:80px
+    left:100px
 }
 .rsm_cert ul:before{
     /* content: "";
@@ -73,7 +73,7 @@
     border:1px solid hsl(213, 81%, 90%);
     position: absolute;
     top:0;
-    left:-30px
+    left:-10px
 }
 
 .rsm_timeline ul li > span:before,.rsm_timeline ul li > span:after{
@@ -138,7 +138,7 @@
 
 .box .time span{
     position: absolute;
-    left: -100px;
+    left: -110px;
     color: black;
     /* font-size:80%; */
     font-weight: bold;
@@ -174,7 +174,7 @@
 .date{
     font-size: 14px;
     font-weight: 600;
-    padding-left: 60px;
+    padding-left: 70px;
 
 }
 .timeline_intro {
