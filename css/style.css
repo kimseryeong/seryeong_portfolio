@@ -68,6 +68,11 @@ header .inner{
 	margin-left: 20px;
 	/* position: absolute; */
 }
+.about_itle{
+    font: bold 16px 'NanumSquare', sans-serif;
+}
+
+
 .gitImg img{
     background-color: #aaadb1;
     border-radius: 53%;
