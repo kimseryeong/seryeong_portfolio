@@ -68,8 +68,15 @@ header .inner{
 	margin-left: 20px;
 	/* position: absolute; */
 }
+
+#about_info p{
+    margin-bottom: 10px;
+}
 .about_itle{
-    font: bold 16px 'NanumSquare', sans-serif;
+    font: bold 18px 'NanumSquare', sans-serif;
+}
+.tab{
+    padding-left: 15px;
 }
 
 
