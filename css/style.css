@@ -32,6 +32,12 @@ a {
 	color: #777;
 	
 }
+.mrgn-top{
+    margin-top: 10px;
+}
+
+
+
 
 #topButton {position: fixed; right: 2%; bottom: 50px; z-index: 999; }
 #topButtonImg{
@@ -76,10 +82,14 @@ header .inner{
     font: bold 18px 'NanumSquare', sans-serif;
 }
 .tab{
-    padding-left: 15px;
+    padding-left: 5px;
 }
 .about_name{
     font-weight: 600;
+}
+.about_name:hover{
+    color: hsl(222, 100%, 75%);
+    font-weight: 1000;    
 }
 .about_date{
     margin-left: 10px;
@@ -100,6 +110,8 @@ header .inner{
     content: url('../img/mail_logo.png');
     
 }
+
+
 
 /* .aboutMeImg img:hover{
     box-shadow: 3px 3px rgb(0,0,0,0.1);
@@ -141,7 +153,7 @@ header .inner #gnb li a:hover{
 #about_figure{
     display: flex;
     width: 100%;
-	height: 690px;
+	height: 625px;
 	background-color: #edf5ff;
 	position: relative;
 	overflow: hidden;
@@ -150,6 +162,15 @@ header .inner #gnb li a:hover{
 
 #about_figure .inner{
     display: flex;
+}
+.main_scroll{
+    background-color: #edf5ff;
+    text-align: center;
+    padding: 10px;
+}
+.main_scroll img{
+    width: 45px;
+    height: 45px;
 }
 
 .img{
@@ -166,14 +187,14 @@ header .inner #gnb li a:hover{
     /* padding-right: 90px; */
 }
 
-figure{
+/* figure{
 	width: 100%;
 	height: 690px;
 	background-color: #edf5ff;
 	position: relative;
 	overflow: hidden;
     padding: 200px 50px 30px 50px;
-}
+} */
 figure video{
 	object-fit: cover; /* 영상을 figure 영역 안에 꽉 차도록 설정 */
 	width: 100%;
@@ -780,7 +801,9 @@ margin: 20px 4px;
     font-weight: 600;
     margin: 0px 2px;
 }
-
+.trble{
+    padding-left: 20px;
+}
 
 
 /* animation */

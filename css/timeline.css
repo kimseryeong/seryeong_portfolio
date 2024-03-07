@@ -118,8 +118,9 @@
 }
 .box .timeline_title{
     text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 10px
+    font-weight: 800;
+    font-size: 16px;
+    /* margin-bottom: 10px */
 }
 
 .box .info:first-letter{text-transform: capitalize;line-height: 1.7}
