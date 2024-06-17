@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import MainPage from './MainPage';
+import Project from './Project';
 
 
 const MainContents = styled.div`
@@ -20,7 +21,7 @@ export default function Main(){
         <>
             <MainPage/>
             <MainContents>
-                <div className='div1'>div1</div>
+                <Project></Project>
                 <div className='div1'>div1</div>
                 <div className='div1'>div1</div>
                 <div className='div1'>div1</div>
