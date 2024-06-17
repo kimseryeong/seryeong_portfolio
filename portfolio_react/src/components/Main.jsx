@@ -1,6 +1,8 @@
 import styled from 'styled-components';
+import MainPage from './MainPage';
 
-const MainStyle = styled.div`
+
+const MainContents = styled.div`
     height: 100%;
     padding-top: 60px;
     margin: 0 200px;
@@ -15,12 +17,15 @@ const MainStyle = styled.div`
 
 export default function Main(){
     return (
-        <MainStyle>
-            <div className='div1'>div1</div>
-            <div className='div1'>div1</div>
-            <div className='div1'>div1</div>
-            <div className='div1'>div1</div>
-            <div className='div1'>div1</div>
-        </MainStyle>
+        <>
+            <MainPage/>
+            <MainContents>
+                <div className='div1'>div1</div>
+                <div className='div1'>div1</div>
+                <div className='div1'>div1</div>
+                <div className='div1'>div1</div>
+                <div className='div1'>div1</div>
+            </MainContents>
+        </>
     );
 }
