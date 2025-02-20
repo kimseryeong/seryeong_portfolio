@@ -819,11 +819,11 @@ margin: 20px 4px;
 
 /* animation */
 .skill-list li .progressbar_java {
-    width: 55%;
+    width: 70%;
     animation: progressbar_java 2s ease-out;
 }
 .skill-list li .progressbar_javascript {
-    width: 60%;
+    width: 90%;
     animation: progressbar_javascript 2s ease-out;
 }
 .skill-list li .progressbar_springboot {
@@ -839,11 +839,11 @@ margin: 20px 4px;
     animation: progressbar_oracle 2s ease-out;
 }
 .skill-list li .progressbar_html {
-    width: 50%;
+    width: 80%;
     animation: progressbar_html 2s ease-out;
 }
 .skill-list li .progressbar_css {
-    width: 55%;
+    width: 80%;
     animation: progressbar_css 2s ease-out;
 }
 .skill-list li .progressbar_jenkins {
@@ -851,11 +851,11 @@ margin: 20px 4px;
     animation: progressbar_jenkins 2s ease-out;
 }
 .skill-list li .progressbar_svn {
-    width: 40%;
+    width: 80%;
     animation: progressbar_svn 2s ease-out;
 }
 .skill-list li .progressbar_git {
-    width: 30%;
+    width: 80%;
     animation: progressbar_git 2s ease-out;
 }
 .skill-list li .progressbar_python {
@@ -863,12 +863,16 @@ margin: 20px 4px;
     animation: progressbar_python 2s ease-out;
 }
 
+.contact-link:hover{
+    color: #b6d7ff;
+}
+
 @keyframes progressbar_java { 
     0%  { 
         width: 0%;
     } 
     100% { 
-        width: 55%;
+        width: 70%;
     }  
 }
 @keyframes progressbar_javascript { 
@@ -876,7 +880,7 @@ margin: 20px 4px;
         width: 0%;
     } 
     100% { 
-        width: 60%;
+        width: 90%;
     }  
 }
 @keyframes progressbar_springboot { 
@@ -908,7 +912,7 @@ margin: 20px 4px;
         width: 0%;
     } 
     100% { 
-        width: 50%;
+        width: 80%;
     }  
 }
 @keyframes progressbar_css { 
@@ -916,7 +920,7 @@ margin: 20px 4px;
         width: 0%;
     } 
     100% { 
-        width: 55%;
+        width: 80%;
     }  
 }
 @keyframes progressbar_jenkins { 
@@ -932,7 +936,7 @@ margin: 20px 4px;
         width: 0%;
     } 
     100% { 
-        width: 40%;
+        width: 80%;
     }  
 }
 @keyframes progressbar_git { 
@@ -940,7 +944,7 @@ margin: 20px 4px;
         width: 0%;
     } 
     100% { 
-        width: 30%;
+        width: 80%;
     }  
 }
 @keyframes progressbar_python { 
