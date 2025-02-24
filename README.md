@@ -1,11 +1,17 @@
-# Portfolio
+# 🌐 Personal Portfolio Website
+
+### 💡 Date : 2024.01.05 - 2024.02.14
+
+Welcome to my personal portfolio website !
+<br>
+
+This project showases my skills, prjects, and experiences as a web developer.
+Implementing a website that allows scalable management of my portfolio.
 
 
-### 💡 기간 : 2024.01.05 - 2024.02.14 (약 1개월)
+### 🛠️ Technologies Used
+- HTML/CSS, Javascript, git pages
 
-### 💡 목적 : 웹개발자로서 확장성 있게 포트폴리오를 관리할 수 있도록 사이트 형태로 구현해보기
-
-
-
-#### :gem: 사용 스킬 : HTML/CSS, Javascript, git pages
 ----
+
+확장성 있게 포트폴리오를 관리할 수 있게 웹사이트 형식으로 구현 ✨
