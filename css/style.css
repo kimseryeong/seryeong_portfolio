@@ -94,6 +94,10 @@ header .inner{
     color: hsl(222, 100%, 75%);
     font-weight: 1000;    
 }
+/* .about_name::after {
+    content: "자세히 보기";
+    position: absolute;
+} */
 
 .link{
     margin-top: 20px;
@@ -225,13 +229,18 @@ figure .inner h1{
 	font-family: 'rubi';
 	margin-bottom: 20px;
 }
-figure .inner p{
+.explain{
 	font: 24px;
 	line-height: 1.4;
 	font-family: 'NanumSquare', sans-serif;
 	/* color: hsl(0, 0%, 100%); */
 	margin-bottom: 60px;
 }
+
+.explain hr {
+    margin: 20px 0;
+}
+
 .viewDetail{
 	display: block;
 	width: 400px;
@@ -815,7 +824,15 @@ margin: 20px 4px;
 .trble{
     padding-left: 20px;
 }
-
+.mgb15 {
+    margin-bottom: 15px;
+}
+.pdl25 {
+    padding-left: 25px;
+}
+.trble div span {
+    font-weight: 800;
+}
 
 /* animation */
 .skill-list li .progressbar_java {
