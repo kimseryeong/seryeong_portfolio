@@ -731,9 +731,6 @@ footer #ContactLogo li span{
 .contact-logo{
 	display: flex;
 }
-.contact-logo a:hover{
-    border-bottom: #ddd;
-}
 
 /* skill */
 .inner-wrap{
@@ -881,7 +878,7 @@ margin: 20px 4px;
 }
 
 .contact-link:hover{
-    color: #b6d7ff;
+    color: #b6d7ff!important;
 }
 
 @keyframes progressbar_java { 

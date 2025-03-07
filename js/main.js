@@ -31,8 +31,18 @@ $(document).ready(function(){
 
     //메뉴 클릭 시
     fnMenuClick();
+
+    videoSpeed();
 });
     
+const videoSpeed = () => {
+    const video = document.querySelectorAll('video');
+    video.forEach((val)=>{
+        val.playbackRate = 1.25;
+
+    })
+}
+
 
 
 // 소개보기
